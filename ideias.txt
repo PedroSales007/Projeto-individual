@@ -1,0 +1,30 @@
+-------Forza horizon 1-------------
+- Nome do Site: Horizon Tuner
+
+-Porque do projeto: Minha infância toda, eu nunca tive um videogame próprio, mas meu primo tinha e eu vivia na casa dele. Era ainda melhor porque morávamos muito perto um do outro. Tinha vezes em que passávamos a tarde toda jogando, tanto que zerei o primeiro jogo três vezes: uma junto com ele, dividindo as missões, e as outras duas sozinho uma no modo médio e outra no difícil.
+	No console, havia algumas restrições, como o modo online que não funcionava, mas o modo história... ah, esse eu era e ainda sou apaixonado. Uma coisa que sempre me chamou muita atenção foi a sensação de tensão quando a corrida começava, o controle vibrando com o torque do motor, e o coração entrando no mesmo ritmo do carro. No meio da corrida, era como se existisse uma conexão, tornando eu e o carro em um só, trazendo a sensação de estar realmente dirigindo na vida real.
+	Mas o melhor de tudo era o final da corrida, quando você está no x1 com outro jogador na reta final. Acho que todo mundo que já jogou fez isso: antes de cruzar a linha de chegada em primeiro lugar, virar o carro e fazer um drift, finalizando em grande estilo. E o melhor: aquela explosão de alívio e a sensação de conquista no momento final.
+
+
+
+Interação com o usuario: Personalização completa do carro
+
+- Gráfico
+1. Gráfico de Pizza / Doughnut
+KPI (quantitativa):  Tipos de motor escolhidos
+Dado: Tipo de motor (V6, V8, elétrico, turbo etc)
+Insight: Qual motor é mais popular entre os usuários
+Uso: Perfil de jogador (velocidade, potência, economia)
+
+2.Radar Chart (Gráfico de Aranha)
+KPI (qualitativa): Perfil de estilo do usuário com base nas escolhas
+Dado: Pontuação automática para atributos como "performance", "design", "originalidade", "realismo"
+Insight: Agrupamento de estilos (ex: “piloto técnico”, “tunador”, “estético”)
+Uso: Pode virar até uma “badge” ou título pro usuário
+
+3. Gráfico de Linha ou Área
+KPI (quantitativa): Tempo médio gasto em cada etapa de personalização
+Dado: Tempo entre início e fim da customização de cada parte
+Insight: Etapas que geram mais engajamento (ou frustração)
+Uso: Melhorar experiência do usuário em partes mais demoradas
+

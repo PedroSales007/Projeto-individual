@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/loginCadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <div class="container_cadastro">
+            <div class="img_cadastro"></div>
+
+
+            <div class="cadastro">
+                <h2 class="title f1">Cadastrar</h2>
+
+                <div class="f2" style="display: flex; align-self: flex-start; margin-left: 18px;">
+                    <input type="text" id="input_login" class="input_txt" placeholder="Usuario/Empresa"> 
+                </div>
+
+                <div class="f2">
+                    <input type="text" id="input_email" class="input_txt" placeholder="Email">
+                    <input type="password" id="input_tel" class="input_txt" placeholder="Telefone">
+                </div>
+                <div class="f2">
+                    <input type="number" id="input_cnpj" class="input_txt" placeholder="Cnpj">
+                    <input type="number" id="input_cep" class="input_txt" placeholder="Cep">
+                </div>
+
+                <div class="f2">
+                    <input type="password" id="input_senha" class="input_txt" placeholder="Senha">
+                    <input type="password" id="input_confirmarSenha" class="input_txt" placeholder="Confirmar senha">
+                </div>
+                
+            </div><br><br>
+        
+        <div class="div_btn">
+            <button onclick="entrar()">Cadastrar</button><br><br>
+        </div>
+</div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    function entrar() {
+        var login = input_login.value;
+        var senha = input_senha.value;
+        var confirmarSenha = input_confirmarSenha.value;
+        var cep = input_cep.value;
+        var cnpj = input_cnpj.value;
+        var email = input_email.value;
+
+        if (login == '' || senha == '' || cep == '' || cnpj == '' || email == '' || confirmarSenha == '') {
+            alert('Campos não preenchidos')
+        } else if (confirmarSenha != senha) {
+            alert('Senhas divergentes')
+        }
+        else {
+            window.location.href = 'monitoramento.html'
+        }
+    }
+</script>

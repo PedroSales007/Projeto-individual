@@ -1,0 +1,29 @@
+:root {
+    --branco: #fff;
+    --preto-transparent: #0000002c;
+    --preto-fundo: #1a1a1ae3;
+    --background-botao: #DD4229;
+}
+
+@font-face {
+font-family:'fontTitulo';
+src:url("../fontes/Futura-Extra-Black-Condensed-Italic.otf");
+}
+
+@font-face {
+font-family:'fontParagrafo';
+src:url("../fontes/akzidenz-grotesk-bq-extended.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    cursor: url('../imagens/cursor.png'), auto;
+    font-family: 'fontParagrafo';
+
+}
