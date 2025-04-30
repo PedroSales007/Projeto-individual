@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/geral.css">
+
+  <title>Garagem Forza 3D</title>
+  <style>
+    body { 
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    #container3D canvas { 
+      background: #cccc;
+        width: 100vw !important;
+        height: 100vh !important;
+        top:0;
+        left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <picture>
+        Horizon Tuner
+    </picture>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href=index.html">Sobre</a></li>
+        <li><a href="garagem.html">Garagem</a></li>
+    </ul>
+
+    <div class="div_btn">
+        <button class="btn_cadastro">Cadastro</button>
+        <button class="btn_login">Login</button>
+    </div>
+</nav>
+
+  <main>
+    <div id="container3D"></div>
+  </main>
+
+  <script type="module" src="../javaScript/main-prototipo.js"></script>
+
+</body>
+</html>

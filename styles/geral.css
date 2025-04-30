@@ -1,8 +1,10 @@
 :root {
-    --branco: #fff;
-    --preto-transparent: #0000002c;
+    --branco: #F8F9FA;
+    --preto:#1C1C1C;
+    --azul-metalico: #0077B6;
+    --preto-transparent: #1C1C1C;
     --preto-fundo: #1a1a1ae3;
-    --background-botao: #DD4229;
+    --background-botao: #C1121F;
 }
 
 @font-face {
@@ -22,7 +24,7 @@ src:url("../fontes/akzidenz-grotesk-bq-extended.ttf");
 }
 
 a,
-button {
+button, body{
     cursor: url('../imagens/cursor.png'), auto;
     font-family: 'fontParagrafo';
 

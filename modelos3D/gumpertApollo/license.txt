@@ -1,0 +1,11 @@
+Model Information:
+* title:	2008 Gumpert Apollo S
+* source:	https://sketchfab.com/3d-models/2008-gumpert-apollo-s-d7e74e25602b414893eddf330ad3fb3c
+* author:	Ddiaz Design (https://sketchfab.com/ddiaz-design)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2008 Gumpert Apollo S" (https://sketchfab.com/3d-models/2008-gumpert-apollo-s-d7e74e25602b414893eddf330ad3fb3c) by Ddiaz Design (https://sketchfab.com/ddiaz-design) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

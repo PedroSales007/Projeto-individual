@@ -28,3 +28,23 @@ Dado: Tempo entre início e fim da customização de cada parte
 Insight: Etapas que geram mais engajamento (ou frustração)
 Uso: Melhorar experiência do usuário em partes mais demoradas
 
+
+Carros em exposição:
+Lamborghini 2012 Aventador LP700-4, custando Cr: 400.000
+
+Bugatti Veyron, custando Cr: 2.200.000
+
+Ferrari Fxx 2005, custando Cr: 12.500.000
+
+Ferrari 2012 F430 Scuderia, custando Cr: 270.000
+
+Gumpert Apollo S, custando Cr: 320.000
+
+Dodge 2013 Viper GTS, custando Cr: 95.000
+
+Nissan 2002 Skyline GT-R V Spec R, custando Cr: 52.000
+
+Mercedez-Benz 2006 ML 63 RMG, custando Cr: 80.000
+
+Porsche RGT 8, custando Cr: 320.000
+

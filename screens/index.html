@@ -13,42 +13,58 @@
 </head>
 
 <body>
-   
-<nav>
-    <picture>
-        Horizon Tuner
-    </picture>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Garagem</a></li>
-    </ul>
+    <nav>
+        <picture>
+            Horizon Tuner
+        </picture>
 
-    <div class="div_btn">
-        <button class="btn_cadastro">Cadastro</button>
-        <button class="btn_login">Login</button>
-    </div>
-</nav>
-<main>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#">Garagem</a></li>
+        </ul>
 
-<div class="teste">
-    <div class="filho">
-        Monte seu carro. Sinta a emoção<br>
-        <p>Customize cada detalhe e veja seu reflexo em gráficos</p>
-    </div>
-    <button>Começar agora</button>
-</div>
-</main>
+        <div class="div_btn">
+            <button class="btn_cadastro">Cadastro</button>
+            <button class="btn_login">Login</button>
+        </div>
+    </nav>
+
+    <main class="apresentacao">
+        <div class="texto">
+            
+        </div>
+        <div class="teste">
+            <div class="filho">
+                <h1><span style="font-size: 50px;">Bem-vindo ao <br></span><span style="font-family: 'fontTitulo';">HORIZON TUNER</span></h1>
+
+                <button onclick="garagem()" class="btn_garagem">Garagem</button>
+            </div>
+        </div>
+    </main>
+
+    <main class="mapa" id="mapa">
+        <h1>Mapa do Colorado</h1>
+        <picture>
+    
+        </picture>
+    </main>
 
 </body>
+
 </html>
+
 <script>
-    function cadastrar(){
+    function cadastrar() {
         window.location = 'cadastro.html'
     }
 
-    function login(){
+    function login() {
         window.location = 'login.html'
+    }
+
+    function garagem() {
+        window.location = 'garagem-prototipo.html'
     }
 </script>
