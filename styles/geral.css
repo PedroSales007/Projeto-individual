@@ -25,7 +25,7 @@ src:url("../fontes/akzidenz-grotesk-bq-extended.ttf");
 
 a,
 button, body{
-    cursor: url('../imagens/cursor.png'), auto;
+    cursor: url('../imagens/body/cursor.png'), auto;
     font-family: 'fontParagrafo';
 
 }

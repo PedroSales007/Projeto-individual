@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/garagem.css">
+    <link rel="stylesheet" href="../styles/geral.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="comprar">Comprar carro</div>
+        <div class="container">
+            <section class="marcadores">
+                <div class="marca">
+                    <picture class="marcaCarro" id="marcaCarro">
+                       
+                    </picture>
+                </div>
+                <div class="valorCR">
+                    <img src="../imagens/moeda/cr-moeda.png" alt="" width="30px">
+                    <span class="valor" id="valorCR"></span>
+                </div>
+                <div class="customizar">
+                    Customizar
+                </div>
+            </section>
+
+            <section class="containerCarro">
+                <header>
+                    <div class="conjunto">
+                        <div class="nomeMarca" id="nomeMarca"></div>
+                        <div class="nomeModelo" id="nomeModelo"></div>
+                        <div class="modeloAno" id="modeloAno"></div>
+                    </div>
+                    <div class="classe" id="classe"></div>
+                </header>
+                <div class="imgCarro" id="imgCarro">
+                    
+                </div>
+            </section>
+
+            <section class="segmentosGeral">
+                <div class="classe-tracao">
+                    <div class="nivel" id="nivel">
+                    </div>
+                    <div class="tracao" id="tracao">
+                        <span id="legendaTracao"></span>
+                        <span id="imgTracao"></span>
+                    </div>
+                </div>
+
+                <div class="segmentos">
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Velocidade
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemVelocidade"></div>
+                            </div>
+                        </div>
+                        <div id="velocidade"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Controle
+                             <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemControle"></div>
+                            </div>
+                        </div>
+                        <div id="controle"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Acelereção
+                             <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemAceleracao"></div>
+                            </div>
+                        </div>
+                        <div id="aceleracao"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Arrancada
+                             <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemArrancagem"></div>
+                            </div>
+                        </div>
+                        <div id="arrancada"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Freanagem
+                             <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemFrenagem"></div>
+                            </div>
+                        </div>
+                        <div id="frenagem"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="escolherCarro">
+            <div class="change" onclick="ferrarif40()"><img src="../imagens/ferrari/f40/f40.png" alt=""></div>
+            <div class="change" onclick="srtViper()"><img src="../imagens/viper/viper-gts.png" alt=""></div>
+            <div class="change" onclick="nissanSkyline()">
+                <img src="../imagens/nissan/nissan-gtr.png" alt="">
+            </div>
+            <div class="change" onclick="bugattiVeyron()">
+                <img src="../imagens/bugatti/bugatti-veyron.png" alt="">
+            </div>
+            <div class="change" onclick="toyotaSupraRZ()">
+                <img src="../imagens/toyotaSupra/supra-rz.png" alt="">
+            </div>
+            <div class="change" onclick="lamborghiniMurcielago()">
+                <img src="../imagens/lamborghini/lambo-murcielago.png" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<script src="../javaScript/garagemEscolhaCarro.js"></script>

@@ -1,0 +1,233 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#00000094;
+}
+
+main {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .comprar {
+    font-family: "fontTitulo";
+    width: 215px;
+    height: 45px;
+    background-color: #FEFB4C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+main .container .marcadores {
+    width: 20%;
+    height: 100%;
+    background: #20202075;
+}
+
+main .container .marcadores .marca{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .marcadores .marca picture{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .marcadores .marca picture img{
+    width: 100px;
+}
+
+main .container .marcadores .valorCR{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+main .container .marcadores .valorCR, .customizar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    font-size: 20px;
+}
+
+main .container .containerCarro {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #0000008c;
+}
+
+main .container .containerCarro header {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container .containerCarro header .nomeMarca {
+    font-size: 30px;
+    color: var(--branco);
+}
+
+main .container .containerCarro header .nomeModelo {
+    font-size: 25px;
+    color: #7D8D8F;
+}
+
+main .container .containerCarro header .modeloAno {
+    color: var(--branco);
+    font-size: 15px
+}
+
+main .container .containerCarro header .classe {
+    color: #B2B04F;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .container .containerCarro .imgCarro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .containerCarro .imgCarro img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    
+}
+
+main .container .segmentosGeral {
+    width: 20%;
+    height: 100%;
+    background: #20202075;
+}
+
+main .container .segmentosGeral .classe-tracao{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom:1px solid #000;
+}
+
+main .container .segmentosGeral .classe-tracao .nivel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-right:1px solid #000;
+}
+
+main .container .segmentosGeral .classe-tracao .nivel img{
+    width: 50%;
+}
+
+main .container .segmentosGeral .classe-tracao .tracao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: var(--branco);
+    font-weight: bold;  
+}
+
+main .container .segmentosGeral .segmentos {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--branco);
+    font-weight: bold;  
+}
+
+main .container .segmentosGeral .segmentos .seg-conjunto {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);
+    font-weight: bold;  
+}
+
+main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem{
+    width: 150px; 
+    height: 8px;
+    border-radius: 5px;
+    background: #000;
+}
+main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem #nivelPorcentagemVelocidade, #nivelPorcentagemControle, #nivelPorcentagemAceleracao, #nivelPorcentagemArrancagem, #nivelPorcentagemFrenagem{
+    width: 100px; 
+    height: 8px;
+    border-radius: 5px;
+    background: #ffffff;
+    z-index: 2;
+}
+
+
+
+main .escolherCarro {
+    width: 100%;
+    height: 113px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+
+}
+
+main .escolherCarro .change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 113px;
+    background-color: #ccc;
+}
+
+main .escolherCarro .change img{
+    width: 150px;
+}
+
+main .escolherCarro .change:hover {
+    width: 310px;
+    height: 140px;
+    border-bottom: 5px solid #F26536;
+}
