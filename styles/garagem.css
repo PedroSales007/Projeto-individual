@@ -1,15 +1,36 @@
 body {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:#00000094;
+    background-image:url("../imagens/body/background-garagem.png");
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+.voltar{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: var(--background-botao);
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.voltar:hover{
+    background-color: #e67e22;
+    
+}
 main {
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -19,7 +40,7 @@ main .comprar {
     font-family: "fontTitulo";
     width: 215px;
     height: 45px;
-    background-color: #FEFB4C;
+    background-color: var(--amarelo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +58,7 @@ main .container {
 main .container .marcadores {
     width: 20%;
     height: 100%;
-    background: #20202075;
+    background: #5e5e5ebb;
 }
 
 main .container .marcadores .marca{
@@ -64,7 +85,7 @@ main .container .marcadores .valorCR{
     border-top: 1px solid #000;
 }
 
-main .container .marcadores .valorCR, .customizar{
+main .container .marcadores .valorCR, .config{
     width: 100%;
     height: 80px;
     display: flex;
@@ -82,7 +103,7 @@ main .container .containerCarro {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: #0000008c;
+    background: #0000009d;
 }
 
 main .container .containerCarro header {
@@ -131,7 +152,7 @@ main .container .containerCarro .imgCarro img {
 main .container .segmentosGeral {
     width: 20%;
     height: 100%;
-    background: #20202075;
+    background: #5e5e5ebb;
 }
 
 main .container .segmentosGeral .classe-tracao{
@@ -201,33 +222,55 @@ main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPo
 }
 
 
-
 main .escolherCarro {
     width: 100%;
-    height: 113px;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: hidden;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
     align-items: center;
-    position: relative;
-
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+    scroll-behavior: smooth;
 }
 
-main .escolherCarro .change {
+main .escolherCarro::-webkit-scrollbar {
+    height: 8px;
+}
+
+main .escolherCarro::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+main .escolherCarro::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+main .carrossel {
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    width: 100%;
+    height: 130px;
+}
+
+main .carrossel .change {
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 250px;
     height: 113px;
     background-color: #ccc;
+    transition: all 0.3s ease;
 }
 
-main .escolherCarro .change img{
+main .carrossel .change img {
     width: 150px;
 }
 
-main .escolherCarro .change:hover {
-    width: 310px;
-    height: 140px;
+main .carrossel .change:hover {
+    transform: scale(1.1);
     border-bottom: 5px solid #F26536;
 }

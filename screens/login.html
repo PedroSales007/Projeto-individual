@@ -1,64 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/loginCadastro.css">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../styles/geral.css">
+  <link rel="stylesheet" href="../styles/loginCadastro.css">
+  <title>Login - Horizon Tuner</title>
 </head>
 <body>
-    <main>
-        <div class="container_login">
+    <button onclick="home()" class="voltarHome"><img src="../imagens/body/home.png" alt="" width="35px"></button>
 
-            <div class="img_login"></div>
+  <div class="container">
+    <h2>Realizar login</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Crie uma senha" required />
+      </div>
+      <button type="submit" class="btn" onclick="login()">Entrar</button>
+      <div class="login-link">
+        Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+      </div>
+    </form>
+  </div>
 
-            <div class="login">
-                <h2 class="title_login f1" >Login</h2>
-
-                <div class="f1">
-                    <label for="input_login" id="lb_login" style="display: none;">Login</label>
-                    <input type="text" id="input_login" class="input_txt" placeholder="Usuario" onclick="transicao()">
-                </div>
-
-                <div class="f1">
-                    <input type="password" id="input_senha" class="input_txt" placeholder="Senha"><br>
-                    <a href="recuperarSenha.html" class="links1">Esqueceu a senha</a>
-                </div>
-
-                <div class="div_btn">
-                    <button onclick="entrar()">Entrar</button><br><br>
-                    <a href="cadastro.html" class="links2">Criar conta</a>
-                </div>
-            </div>
-        </div>
-
-    </main>
 </body>
-
 </html>
-
 <script>
-    function transicao() {
-        var lbLogin = lb_login
-         lbLogin.style.display = 'block' 
-         lbLogin.style.transition = '4s' 
+    function home(){
+        window.location = 'index.html'
     }
 
-    function entrar() {
-        var login = input_login.value;
-        var senha = input_senha.value;
-
-        if (login == '' || senha == '') {
-            alert('Campos não preenchidos')
-        } else {
-            if (login == 'sptech' && senha == 'Urubu100') {
-                window.location.href = 'monitoramento.html'
-            } else {
-                alert('Senha ou usuario incorretos')
-                login = ''
-                senha = ''
-            }
-        }
+    function login() {
     }
 </script>

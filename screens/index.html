@@ -13,21 +13,20 @@
 </head>
 
 <body>
-
     <nav>
         <picture>
-            Horizon Tuner
+            <a href="index.html">Horizon Tuner</a>
         </picture>
 
         <ul>
-            <li><a href="#">Home</a></li>
             <li><a href="#mapa">Mapa</a></li>
-            <li><a href="#">Garagem</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projeto">Interação</a></li>
         </ul>
 
         <div class="div_btn">
-            <button class="btn_cadastro">Cadastro</button>
-            <button class="btn_login">Login</button>
+            <button class="btn_cadastro" onclick="cadastrar()">Cadastro</button>
+            <button class="btn_login" onclick="login()">Login</button>
         </div>
     </nav>
 
@@ -47,10 +46,47 @@
 
     <main class="mapa" id="mapa">
         <h1>Mapa do Colorado</h1>
-        <picture>
-    
-        </picture>
+        <picture></picture>
     </main>
+
+    
+    <main class="sobre" id="sobre">
+        <h1 class="h1-sobre">Sobre</h1>
+        <div class="container">
+            <div class="imagemCarro">
+                <img src="../imagens/body/car.png" alt="">
+            </div>
+
+            <div class="texto" >
+                <h1>Uma Homenagem Interativa</h1>
+                <br>
+                <p>Lançado em 2012, Forza Horizon 1 marcou uma geração de jogadores com seu estilo inovador de corrida em mundo aberto. Este projeto é uma celebração à nostalgia e à cultura automotiva, trazendo uma experiência web onde você pode explorar os carros mais icônicos do jogo, personalizá-los visualmente e conhecer suas especificações. Tudo isso de forma interativa, direto do navegador.</p>
+            </div>
+        </div>
+    </main>
+
+    <main class="servico" id="projeto">
+        <h1 class="h1-interacao">Modo de interação</h1>
+        <div class="container">
+            <div class="texto">
+                <ul>
+                    <li>Visualizar os carros mais famosos do Forza Horizon 1</li><br>
+                    <li>Ler as especificações técnicas de cada modelo</li><br>
+                    <li>Visualização completa das especificações em uma dashboard</li><br>
+                    <li>Personalizar visualmente o carro com diferentes cores, motores e chassis</li><br>
+                    <li>Salvar carros personalizados como perfil</li>
+                </ul>
+            </div>
+            <div class="imagemCarro">
+                <img src="../imagens/body/garagem.png" alt="">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; By Pedro Sales - ADS A
+    </footer>
 
 </body>
 

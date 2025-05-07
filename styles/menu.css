@@ -9,13 +9,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: var(--preto-transparent);
+    background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
     border-bottom: 10px double var(--branco);
 }
 
-nav picture {
+nav picture a{
     font-size: 30px;
     color: var(--branco);
+    text-decoration: none;
     font-family: 'fontTitulo';
 }
 

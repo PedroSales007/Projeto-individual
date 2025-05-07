@@ -1,9 +1,12 @@
-
+body{
+    background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .apresentacao {
     background-image: url('../imagens/body/backgroud2.png');
     background-size: cover;
-    
-    animation: 2.5s forwards blur;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -13,6 +16,7 @@
 
 .apresentacao .container{
     backdrop-filter: blur(3px);
+    opacity: 100%;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -34,6 +38,7 @@
     width: 100%;
     height: 300px;
     display: flex;
+    opacity: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -90,8 +95,7 @@
 
 /*Main 2*/
 .mapa{
-    background: var(--preto);
-    width: 100%;
+    width: 80%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -100,7 +104,7 @@
 }
 
 .mapa h1{
-    margin-bottom: 30px;
+    margin: 30px 0;
     color: var(--branco);
 }
 
@@ -108,6 +112,101 @@
 .mapa picture{
     background-image: url(../imagens/body/mapa.jpg);
     background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*Main 3*/
+.sobre {
+    border-top: 10px double var(--branco);
+    background: #202020c9;
+    color: var(--branco);
     width: 80%;
-    height: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre .h1-sobre{
+    margin-top: 30px;
+}
+
+.sobre .container{
+    color: var(--branco);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sobre .container .imagemCarro{
+    height: 250px;
+    width: 45%;
+}
+.sobre .container img{
+    width: 100%;
+    background-size: cover;
+}
+
+.sobre .container .texto{
+    width: 50%;
+}
+
+/*Main 4*/
+.servico {
+    border-top: 10px double var(--branco);
+    background: #202020c9;
+    color: var(--branco);
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servico .h1-interacao{
+    margin-top: 30px;
+
+}
+.servico .container{
+    color: var(--branco);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.servico .container .imagemCarro{
+    height: 250px;
+    width: 45%;
+}
+.servico .container img{
+    width: 100%;
+    background-size: cover;
+}
+
+.servico .container .texto{
+    width: 50%;
+    padding: 50px;
+}
+
+
+footer{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #000;
+        border-top: 10px double var(--branco);
+        color: var(--branco);
 }

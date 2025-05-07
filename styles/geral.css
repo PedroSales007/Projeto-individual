@@ -4,7 +4,8 @@
     --azul-metalico: #0077B6;
     --preto-transparent: #1C1C1C;
     --preto-fundo: #1a1a1ae3;
-    --background-botao: #C1121F;
+    --background-botao: #f39c12;
+    --amarelo:#FEFB4C;
 }
 
 @font-face {
@@ -23,6 +24,12 @@ src:url("../fontes/akzidenz-grotesk-bq-extended.ttf");
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: fontTitulo;
+}
+p{
+    font-family: fontParagrafo;
+}
 a,
 button, body{
     cursor: url('../imagens/body/cursor.png'), auto;
