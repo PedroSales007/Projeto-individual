@@ -4,12 +4,12 @@ const carros = [
         modelo: "GTS",
         ano: "2013",
         classe: "SUPER CARS",
-        logo: "../imagens/viper/viper-logo.png",
-        imagem: "../imagens/viper/viper-gts.png",
-        nivel: "../imagens/classe-tracao/niveis/r3-800.png",
+        logo: "imagens/viper/viper-logo.png",
+        imagem: "imagens/viper/viper-gts.png",
+        nivel: "imagens/classe-tracao/niveis/r3-800.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 9.0,
@@ -19,19 +19,19 @@ const carros = [
             frenagem: 9.5
         },
         preco: "110.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Ferrari",
         modelo: "F40",
         ano: "1987",
         classe: "SUPER CARS",
-        logo: "../imagens/ferrari/logo-ferrari.png",
-        imagem: "../imagens/ferrari/f40/f40.png",
-        nivel: "../imagens/classe-tracao/niveis/s-632.png",
+        logo: "imagens/ferrari/logo-ferrari.png",
+        imagem: "imagens/ferrari/f40/f40.png",
+        nivel: "imagens/classe-tracao/niveis/s-632.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.0,
@@ -41,19 +41,19 @@ const carros = [
             frenagem: 9.2
         },
         preco: "8000.000",
-        linkConfig: "../screens/dashboard.html"
+        linkConfig: "screens/dashboard.html"
     },
     {
         marca: "Ferrari",
         modelo: "458 Italia",
         ano: "2009",
         classe: "SUPER CARS",
-        logo: "../imagens/ferrari/logo-ferrari.png",
-        imagem: "../imagens/ferrari/458/458.png",
-        nivel: "../imagens/classe-tracao/niveis/s-672.png",
+        logo: "imagens/ferrari/logo-ferrari.png",
+        imagem: "imagens/ferrari/458/458.png",
+        nivel: "imagens/classe-tracao/niveis/s-672.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.0,
@@ -63,19 +63,19 @@ const carros = [
             frenagem: 9.0
         },
         preco: "240.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Bugatti",
         modelo: "Veyron Super Sport",
         ano: "2011",
         classe: "SUPER CARS",
-        logo: "../imagens/bugatti/logo-bugatti.png",
-        imagem: "../imagens/bugatti/bugatti-veyron.png",
-        nivel: "../imagens/classe-tracao/niveis/r2-900.png",
+        logo: "imagens/bugatti/logo-bugatti.png",
+        imagem: "imagens/bugatti/bugatti-veyron.png",
+        nivel: "imagens/classe-tracao/niveis/r2-900.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 10.0,
@@ -85,19 +85,19 @@ const carros = [
             frenagem: 9.4
         },
         preco: "2.200.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Lamborghini",
         modelo: "Aventador LP700-4",
         ano: "2012",
         classe: "SUPER CARS",
-        logo: "../imagens/lamborghini/logo-lamborghini.png",
-        imagem: "../imagens/lamborghini/lambo-aventador.png",
-        nivel: "../imagens/classe-tracao/niveis/r3-725.png",
+        logo: "imagens/lamborghini/logo-lamborghini.png",
+        imagem: "imagens/lamborghini/lambo-aventador.png",
+        nivel: "imagens/classe-tracao/niveis/r3-725.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 10,
@@ -107,19 +107,19 @@ const carros = [
             frenagem: 8.9
         },
         preco: "400.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Pagani",
         modelo: "Zonda R",
         ano: "2010",
         classe: "SUPER CARS",
-        logo: "../imagens/pagani/logo-pagani.png",
-        imagem: "../imagens/pagani/zonda.png",
-        nivel: "../imagens/classe-tracao/niveis/r1-961.png",
+        logo: "imagens/pagani/logo-pagani.png",
+        imagem: "imagens/pagani/zonda.png",
+        nivel: "imagens/classe-tracao/niveis/r1-961.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.1,
@@ -129,19 +129,19 @@ const carros = [
             frenagem: 10
         },
         preco: "1.700.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Koenigsegg",
         modelo: "Agera",
         ano: "2011",
         classe: "SUPER CARS",
-        logo: "../imagens/Koenigsegg/logo-koenigsegg.png",
-        imagem: "../imagens/Koenigsegg/azera.png",
-        nivel: "../imagens/classe-tracao/niveis/r2-815.png",
+        logo: "imagens/Koenigsegg/logo-koenigsegg.png",
+        imagem: "imagens/Koenigsegg/azera.png",
+        nivel: "imagens/classe-tracao/niveis/r2-815.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 10,
@@ -151,19 +151,19 @@ const carros = [
             frenagem: 9.4
         },
         preco: "1.400.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
         modelo: "GT",
         ano: "2005",
         classe: "SUPER CARS",
-        logo: "../imagens/ford/logo-ford.png",
-        imagem: "../imagens/ford/gt/fordGT.png",
-        nivel: "../imagens/classe-tracao/niveis/a-593.png",
+        logo: "imagens/ford/logo-ford.png",
+        imagem: "imagens/ford/gt/fordGT.png",
+        nivel: "imagens/classe-tracao/niveis/a-593.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.9,
@@ -173,19 +173,19 @@ const carros = [
             frenagem: 8.7
         },
         preco: "150.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Audi",
         modelo: "Sport Quattro",
         ano: "1983",
         classe: "SPORTS CARS",
-        logo: "../imagens/audi/logo-audi.png",
-        imagem: "../imagens/audi/sportQuattro.png",
-        nivel: "../imagens/classe-tracao/niveis/b-434.png",
+        logo: "imagens/audi/logo-audi.png",
+        imagem: "imagens/audi/sportQuattro.png",
+        nivel: "imagens/classe-tracao/niveis/b-434.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 5.4,
@@ -195,19 +195,19 @@ const carros = [
             frenagem: 7.9
         },
         preco: "120.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Lancia",
         modelo: "Stratos HF Stradale",
         ano: "1974",
         classe: "SPORTS CARS",
-        logo: "../imagens/lancia/logo-lancia.png",
-        imagem: "../imagens/lancia/lancia.png",
-        nivel: "../imagens/classe-tracao/niveis/c-329.png",
+        logo: "imagens/lancia/logo-lancia.png",
+        imagem: "imagens/lancia/lancia.png",
+        nivel: "imagens/classe-tracao/niveis/c-329.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 4.3,
@@ -217,19 +217,19 @@ const carros = [
             frenagem: 7.4
         },
         preco: "50.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Nissan",
         modelo: "Skyline GTR-R",
         ano: "2000",
         classe: "SPORT CARS",
-        logo: "../imagens/nissan/logo-gtr.png",
-        imagem: "../imagens/nissan/nissan-gtr.png",
-        nivel: "../imagens/classe-tracao/niveis/b-461.png",
+        logo: "imagens/nissan/logo-gtr.png",
+        imagem: "imagens/nissan/nissan-gtr.png",
+        nivel: "imagens/classe-tracao/niveis/b-461.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 6.1,
@@ -239,19 +239,19 @@ const carros = [
             frenagem: 8.3
         },
         preco: "52.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Toyota",
         modelo: "Supra RZ",
         ano: "2013",
         classe: "SPORT CARS",
-        logo: "../imagens/toyotaSupra/logo-supra.png",
-        imagem: "../imagens/toyotaSupra/supra-rz.png",
-        nivel: "../imagens/classe-tracao/niveis/b-464.png",
+        logo: "imagens/toyotaSupra/logo-supra.png",
+        imagem: "imagens/toyotaSupra/supra-rz.png",
+        nivel: "imagens/classe-tracao/niveis/b-464.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 6.8,
@@ -261,19 +261,19 @@ const carros = [
             frenagem: 8.0
         },
         preco: "8000.00",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Chevrolet",
         modelo: "Camaro SS",
         ano: "1969",
         classe: "SPORT CARS",
-        logo: "../imagens/chevrolet/logo-chevrolet.png",
-        imagem: "../imagens/chevrolet/camaroSS.png",
-        nivel: "../imagens/classe-tracao/niveis/d-291.png",
+        logo: "imagens/chevrolet/logo-chevrolet.png",
+        imagem: "imagens/chevrolet/camaroSS.png",
+        nivel: "imagens/classe-tracao/niveis/d-291.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 4.0,
@@ -283,19 +283,19 @@ const carros = [
             frenagem: 6.1
         },
         preco: "45.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Dodge",
         modelo: "Charge R/T-SE",
         ano: "1969",
         classe: "SPORT CARS",
-        logo: "../imagens/dodge/logo-dodge.png",
-        imagem: "../imagens/dodge/charge.png",
-        nivel: "../imagens/classe-tracao/niveis/d-288.png",
+        logo: "imagens/dodge/logo-dodge.png",
+        imagem: "imagens/dodge/charge.png",
+        nivel: "imagens/classe-tracao/niveis/d-288.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 4.3,
@@ -305,19 +305,19 @@ const carros = [
             frenagem: 6.1
         },
         preco: "64.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
         modelo: "Mustang Boss 302",
         ano: "2013",
         classe: "SPORT CARS",
-        logo: "../imagens/ford/logo-ford.png",
-        imagem: "../imagens/ford/mustang/mustang.png",
-        nivel: "../imagens/classe-tracao/niveis/a-544.png",
+        logo: "imagens/ford/logo-ford.png",
+        imagem: "imagens/ford/mustang/mustang.png",
+        nivel: "imagens/classe-tracao/niveis/a-544.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 7.6,
@@ -327,19 +327,19 @@ const carros = [
             frenagem: 8.2
         },
         preco: "42.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
         modelo: "Shelby Cobra 427 S/C",
         ano: "1965",
         classe: "OPEN TOP",
-        logo: "../imagens/ford/logo-ford.png",
-        imagem: "../imagens/ford/shelby/cobra.png",
-        nivel: "../imagens/classe-tracao/niveis/b-694.png",
+        logo: "imagens/ford/logo-ford.png",
+        imagem: "imagens/ford/shelby/cobra.png",
+        nivel: "imagens/classe-tracao/niveis/b-694.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 5.7,
@@ -349,19 +349,19 @@ const carros = [
             frenagem: 7.1
         },
         preco: "900.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Subaru",
         modelo: "Impreza 22B STi",
         ano: "1998",
         classe: "96s RALLY",
-        logo: "../imagens/subaru/logo-subaru.png",
-        imagem: "../imagens/subaru/impreza.png",
-        nivel: "../imagens/classe-tracao/niveis/b-424.png",
+        logo: "imagens/subaru/logo-subaru.png",
+        imagem: "imagens/subaru/impreza.png",
+        nivel: "imagens/classe-tracao/niveis/b-424.png",
         tracao: {
             tipo: "AWD",
-            imagem: "../imagens/classe-tracao/4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 5.2,
@@ -371,19 +371,19 @@ const carros = [
             frenagem: 8.5
         },
         preco: "35.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Mazda",
         modelo: "rx-7",
         ano: "1997",
         classe: "SPORTS CARS",
-        logo: "../imagens/mazda/logo-mazda.png",
-        imagem: "../imagens/mazda/rx-7.png",
-        nivel: "../imagens/classe-tracao/niveis/b-445.png",
+        logo: "imagens/mazda/logo-mazda.png",
+        imagem: "imagens/mazda/rx-7.png",
+        nivel: "imagens/classe-tracao/niveis/b-445.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 7.1,
@@ -393,19 +393,19 @@ const carros = [
             frenagem: 7.7
         },
         preco: "18.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     },
     {
         marca: "Mclaren",
         modelo: "F1",
         ano: "1993",
         classe: "SPORTS CARS",
-        logo: "../imagens/mclaren/logo-mclaren.png",
-        imagem: "../imagens/mclaren/f1.png",
-        nivel: "../imagens/classe-tracao/niveis/s-692.png",
+        logo: "imagens/mclaren/logo-mclaren.png",
+        imagem: "imagens/mclaren/f1.png",
+        nivel: "imagens/classe-tracao/niveis/s-692.png",
         tracao: {
             tipo: "RWD",
-            imagem: "../imagens/classe-tracao/tracao-trazeira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 10,
@@ -415,7 +415,7 @@ const carros = [
             frenagem: 9.1
         },
         preco: "1.500.000",
-        linkConfig: "../screens/login.html"
+        linkConfig: "screens/login.html"
     }
 ];
 
@@ -455,11 +455,11 @@ function exibirCarro(index) {
 
 
 
-marcaCarro.innerHTML = `<img src="../imagens/viper/viper-logo.png" alt="">`
+marcaCarro.innerHTML = `<img src="imagens/viper/viper-logo.png" alt="">`
 valorCR.innerHTML = "110.000"
 config.innerHTML = 'Detalhar Carro'
 function configuracao() {
-    window.location = "../screens/dashboard.html"
+    window.location = "screens/dashboard.html"
 }
 
 nomeMarca.innerHTML = "Viper"
@@ -467,12 +467,12 @@ nomeModelo.innerHTML = "GTS"
 modeloAno.innerHTML = "2013"
 classe.innerHTML = "SUPER CARS"
 
-imgCarro.innerHTML = `<img src="../imagens/viper/viper-gts.png" alt="">`
+imgCarro.innerHTML = `<img src="imagens/viper/viper-gts.png" alt="">`
 
-nivel.innerHTML = `<img src="../imagens/classe-tracao/niveis/r3-800.png" alt="">`
+nivel.innerHTML = `<img src="imagens/classe-tracao/niveis/r3-800.png" alt="">`
 
 legendaTracao.innerHTML = "RWD"
-imgTracao.innerHTML = `<img src="../imagens/classe-tracao/tracao-trazeira.png" alt="">`
+imgTracao.innerHTML = `<img src="imagens/classe-tracao/tracao-trazeira.png" alt="">`
 
 velocidade.innerHTML = "9"
 nivelPorcentagemVelocidade.style.width = "135px"

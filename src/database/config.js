@@ -1,29 +1,38 @@
-const mysql = require("mysql2");
+var mysql = require("mysql2");
 
-// CONEXÃO DO MYSQL WORKBENCH (LOCAL)
-const mySqlConfig = {
-  host: "localhost",
-  database: "horizonTuner",
-  user: "root",
-  password: "PadrinHss%201615",
-}
+// CONEXÃO DO BANCO MYSQL SERVER
+var mySqlConfig = {
+    host: "127.0.0.1", //inserir host
+    database: "horizonTuner", //inserir banco
+    user: "root", // inserir usuario 
+    password: "PadrinHss%201615", // inserir senha 
+    port: 3306
+};
 
 function executar(instrucao) {
-  return new Promise(function (resolve, reject) {
-    var conexao = mysql.createConnection(mySqlConfig);
-    conexao.connect();
-    conexao.query(instrucao, function (erro, resultados) {
-      conexao.end();
-      if (erro) {
-        reject(erro);
-      }
-      console.log(resultados);
-      resolve(resultados);
+
+    if (process.env.AMBIENTE_PROCESSO !== "producao" && process.env.AMBIENTE_PROCESSO !== "desenvolvimento") {
+        console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM .env OU dev.env OU app.js\n");
+        return Promise.reject("AMBIENTE NÃO CONFIGURADO EM .env");
+    }
+
+    return new Promise(function (resolve, reject) {
+        var conexao = mysql.createConnection(mySqlConfig);
+        conexao.connect();
+        conexao.query(instrucao, function (erro, resultados) {
+            conexao.end();
+            if (erro) {
+                reject(erro);
+            }
+            console.log(resultados);
+            resolve(resultados);
+        });
+        conexao.on('error', function (erro) {
+            return ("ERRO NO MySQL SERVER: ", erro.sqlMessage);
+        });
     });
-    conexao.on('error', function (erro) {
-      return ("ERRO NO MySQL WORKBENCH (Local): ", erro.sqlMessage);
-    });
-  });
 }
 
-module.exports = { executar }
+module.exports = {
+    executar
+};

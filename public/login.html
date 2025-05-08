@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="../styles/geral.css">
-  <link rel="stylesheet" href="../styles/loginCadastro.css">
+  <link rel="stylesheet" href="styles/geral.css">
+  <link rel="stylesheet" href="styles/loginCadastro.css">
   <title>Login - Horizon Tuner</title>
 </head>
 <body>
-    <button onclick="home()" class="voltarHome"><img src="../imagens/body/home.png" alt="" width="35px"></button>
+    <button onclick="home()" class="voltarHome"><img src="imagens/body/home.png" alt="" width="35px"></button>
 
   <div class="container">
     <h2>Realizar login</h2>
     <form>
       <div class="form-group">
+        <div id="div_mensagem" style="text-align: center;"></div>
         <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail" required />
+        <input type="email" id="inputEmail" placeholder="Digite seu e-mail" required />
       </div>
       <div class="form-group">
         <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="Crie uma senha" required />
+        <input type="password" id="inputSenha" placeholder="DIgite sua senha" required />
       </div>
-      <button type="submit" class="btn" onclick="login()">Entrar</button>
+      <button type="submit" class="btn" id="btnLogin" onclick="login(event)">Entrar</button>
       <div class="login-link">
         Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
       </div>
@@ -35,6 +36,6 @@
         window.location = 'index.html'
     }
 
-    function login() {
-    }
 </script>
+
+<script src="javaScript/login.js"></script>
