@@ -45,7 +45,7 @@ function login(event) {
                 sessionStorage.ID_USUARIO = json.id;
 
                 setTimeout(function () {
-                    window.location = "garagem-escolherCarro.html";
+                    window.location = "aposLogin.html";
                 }, 1000); // apenas para exibir o loading
 
             });

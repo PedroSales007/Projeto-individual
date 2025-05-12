@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/logado.css">
+
+    <title>Horizon Tuner</title>
+</head>
+
+<body>
+    <nav style="justify-content: space-between; padding: 0 50px;">
+        <picture>
+            <a href="index.html">Horizon Tuner</a>
+        </picture>
+
+        <ul>
+            <li><a href="garagemGeral.html">Carros</a></li>
+            <li><a href="garagem-escolherCarro.html">Principais</a></li>
+            <li><a href="#garagemCustomizacao.html">Customizar</a></li>
+        </ul>
+        <div class="div_perfil">
+            <button class="btn_login" id="opt" onclick="option()">Perfil</button>
+
+            <div class="opt" id="optPerfil">
+                <span id="apresentacao">Olá: <span id="usuarioNome">Usuário</span></span>
+                <br><br>
+                
+                <button onclick="sair()">
+                    Sair
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="historia">
+            <h1 id="e1">Forza Horizon: Inicio de um nova Era</h1>
+            <div class="corpoTexto">
+                <p>Lançado em 23 de outubro de 2012 exclusivamente para Xbox 360, Forza Horizon marcou o início de uma
+                    nova
+                    vertente na renomada franquia Forza. Desenvolvido pela britânica Playground Games, em colaboração
+                    com a
+                    Turn 10 Studios e publicado pela Microsoft Studios, o jogo introduziu uma abordagem inovadora ao
+                    combinar a simulação de corridas com a liberdade de um mundo aberto, centrado em um festival
+                    fictício de
+                    carros e música, o Horizon Festival.</p>
+                <h1 id="2">Desenvolvimento e Concepção</h1>
+                <p>A ideia de Forza Horizon surgiu do desejo de expandir a franquia Forza para além das pistas de
+                    corrida
+                    tradicionais. A Playground Games, formada por veteranos de estúdios renomados como Codemasters,
+                    Bizarre
+                    Creations e Black Rock, propôs um jogo que capturasse a essência da cultura automobilística em um
+                    ambiente de festival.</p>
+                <p>O estado do Colorado, EUA, foi escolhido como cenário após extensas pesquisas e visitas ao local,
+                    onde a
+                    equipe coletou mais de 50.000 fotos para referência. O objetivo era criar uma representação
+                    fictícia,
+                    porém autêntica, das diversas paisagens do estado, incluindo montanhas, planícies e áreas inspiradas
+                    no
+                    Red Rocks Park.</p>
+                <h1 id="3"> Jogabilidade e Inovações</h1>
+                <p>Forza Horizon se destacou por sua jogabilidade acessível e envolvente. Ambientado durante o Horizon
+                    Festival, o jogo permitia aos jogadores explorar livremente as estradas do Colorado, participando de
+                    corridas, desafios e eventos especiais, como competições contra aviões e helicópteros.</p>
+                <p>A mecânica de popularidade incentivava manobras ousadas, como derrapagens e saltos, recompensando os
+                    jogadores com pontos que desbloqueavam novos eventos. Além disso, o jogo oferecia uma variedade de
+                    carros licenciados, personalização de veículos, rádios fictícias com trilhas sonoras envolventes e
+                    modos
+                    multiplayer online.</p>
+                <h1 id="4">Recepção e Legado</h1>
+                <p>Ao ser lançado, Forza Horizon recebeu aclamação da crítica e dos jogadores, sendo elogiado por sua
+                    ambientação vibrante, jogabilidade fluida e inovação dentro do gênero de jogos de corrida. O sucesso
+                    do
+                    título estabeleceu as bases para uma série de sequências:</p>
+                <ul>
+                    <li>Forza Horizon 2 (2014)</li>
+                    <li>Forza Horizon 3 (2016)</li>
+                    <li>Forza Horizon 4 (2018)</li>
+                    <li>Forza Horizon 5 (2021)</li>
+                </ul>
+                <p>Cada novo título expandiu e refinou a fórmula introduzida pelo primeiro jogo, solidificando a série
+                    Horizon como uma das mais populares e influentes no gênero de corrida.</p>
+                <h1 id="5">Descontinuação e Encerramento dos Serviços Online</h1>
+                <p>Em 20 de outubro de 2016, Forza Horizon foi removido da Xbox Store devido à expiração de licenças de
+                    carros e músicas. Posteriormente, em 22 de agosto de 2023, os servidores online do jogo foram
+                    oficialmente desligados, encerrando funcionalidades como partidas multiplayer, rankings e
+                    compartilhamento de conteúdo criado por usuários.</p>
+                <p>Apesar disso, os jogadores que possuem o jogo ainda podem desfrutar da experiência single-player,
+                    seja em
+                    mídia física ou digital, através da retrocompatibilidade com consoles mais recentes.</p>
+                <h1 id="6">Encerramento</h1>
+                <p>Forza Horizon 1 representou uma revolução nos jogos de corrida, oferecendo uma experiência única que
+                    combinava a emoção das corridas com a liberdade de exploração em um mundo aberto. Seu legado
+                    perdura,
+                    influenciando não apenas os títulos subsequentes da série, mas também inspirando outros jogos a
+                    adotarem
+                    abordagens semelhantes.</p>
+            </div>
+
+        </div>
+
+        <div class="navHistoria">
+            <h2>Bem-vindo ao Festival</h2>
+            <div class="links">
+                <a href="#e1">
+                    Inicio de um nova Era
+                </a>
+                <a href="#2">
+                    Desenvolvimento
+                </a>
+                <a href="#3">
+                    Jogabilidade
+                </a>
+                <a href="#4">
+                    Recepção e Legado
+                </a>
+                <a href="#5">
+                    Descontinuação
+                </a>
+                <a href="#6">
+                    Encerramento
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    function option(){
+    var optPerfil = document.getElementById('optPerfil')
+    var opt = document.getElementById('opt')
+    
+    if(optPerfil.style.opacity =='1'){
+        optPerfil.style.opacity = '0'
+        optPerfil.style.transition = '0.3s ease-in;'
+
+    } else{
+        optPerfil.style.opacity = '1'
+        optPerfil.style.transition = '0.3s ease-in'
+    }
+}
+    function sair(){
+        window.location = 'index.html'
+
+    }
+</script>

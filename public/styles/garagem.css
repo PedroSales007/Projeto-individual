@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image:url("../imagens/body/background-garagem.png");
+    background-image:url("../imagens/body/background-garagem.jpg");
     background-size: cover;
     backdrop-filter: blur(5px);
 }
