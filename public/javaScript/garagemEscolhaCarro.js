@@ -439,7 +439,7 @@ const carros = [
         preco: "20.000",
         linkConfig: "screens/login.html"
     },
-     {
+    {
         marca: "Alfa Romeu",
         modelo: "8C Competizione",
         ano: "2007",
@@ -461,7 +461,7 @@ const carros = [
         preco: "280.000",
         linkConfig: "screens/login.html"
     },
-     {
+    {
         marca: "Alfa Romeu",
         modelo: "TZ3 Stradale Zagato",
         ano: "2011",
@@ -709,7 +709,7 @@ const carros = [
         ano: "2002",
         classe: "SUPER CARS",
         logo: "imagens/bmw/logo-bmw.png",
-        imagem: "imagens/bmw/r8Coupe.png",
+        imagem: "imagens/bmw/m3GTR.png",
         nivel: "imagens/classe-tracao/niveis/a-568.png",
         tracao: {
             tipo: "RWD",
@@ -749,11 +749,11 @@ const carros = [
     },
     {
         marca: "Chevrolet",
-        modelo: "Corvette ZL1",
+        modelo: "Corvette ZR1",
         ano: "2009",
         classe: "MODERN MUSCLE",
         logo: "imagens/chevrolet/logo-chevrolet.png",
-        imagem: "imagens/chevrolet/corvetteZL1.png",
+        imagem: "imagens/chevrolet/zr1.png",
         nivel: "imagens/classe-tracao/niveis/s-658.png",
         tracao: {
             tipo: "RWD",
@@ -797,7 +797,7 @@ const carros = [
         ano: "1967",
         classe: "RACE CLASSICS",
         logo: "imagens/lamborghini/logo-lamborghini.png",
-        imagem: "imagens/lamborghini/srt10.png",
+        imagem: "imagens/lamborghini/miura.png",
         nivel: "imagens/classe-tracao/niveis/c-385.png",
         tracao: {
             tipo: "RWD",
@@ -813,7 +813,7 @@ const carros = [
         preco: "Lugares escondidos",
         linkConfig: "screens/login.html"
     },
-     {
+    {
         marca: "Mitsubishi",
         modelo: "Lancer Evolution X GSR",
         ano: "2008",
@@ -835,384 +835,366 @@ const carros = [
         preco: "29.000",
         linkConfig: "screens/login.html"
     },
-  {
-    marca: "Honda",
-    modelo: "NSX R-GT",
-    ano: "2005",
-    classe: "SPORTCAR",
-    logo: "imagens/honda/logo-honda.png",
-    imagem: "imagens/honda-nsxr-gt.png",
-    nivel: "classe-tracao/classe-nivel/s-541.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
+    {
+        marca: "Honda",
+        modelo: "NSX R-GT",
+        ano: "2005",
+        classe: "SPORTCAR",
+        logo: "imagens/honda/logo-honda.png",
+        imagem: "imagens/honda/nsxR-gt.png",
+        nivel: "classe-tracao/classe-nivel/s-541.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 6.5,
+            controle: 9.2,
+            aceleracao: 7.4,
+            arrancada: 7.7,
+            frenagem: 9.1
+        },
+        preco: "400.000"
     },
-    stats: {
-      velocidade: 6.5,
-      controle: 9.2,
-      aceleracao: 7.4,
-      arrancada: 7.7,
-      frenagem: 9.1
+    {
+        marca: "Lotus",
+        modelo: "Exige Cup 240",
+        ano: "2006",
+        classe: "SUPERLIGHT",
+        logo: "imagens/lotus/logo-lotus.png",
+        imagem: "imagens/lotus/exigecup.png",
+        nivel: "classe-tracao/classe-nivel/a-528.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 5.1,
+            controle: 9.4,
+            aceleracao: 8.1,
+            arrancada: 9.3,
+            frenagem: 8.1
+        },
+        preco: "32.000"
     },
-    preco: "400.000"
-  },
-  {
-    marca: "Lotus",
-    modelo: "Exige Cup 240",
-    ano: "2006",
-    classe: "SUPERLIGHT",
-    logo: "imagens/lotus/logo-lotus.png",
-    imagem: "imagens/lotus-exigecup.png",
-    nivel: "classe-tracao/classe-nivel/a-528.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
+    {
+        marca: "Chevrolet",
+        modelo: "Camaro ZL1",
+        ano: "2012",
+        classe: "SPORT CARS",
+        logo: "imagens/chevrolet/logo-chevrolet.png",
+        imagem: "imagens/chevrolet/zl1.png",
+        nivel: "classe-tracao/classe-nivel/s-579.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 6.7,
+            controle: 8,
+            aceleracao: 8.5,
+            arrancada: 8,
+            frenagem: 8.4
+        },
+        preco: "45.000"
     },
-    stats: {
-      velocidade: 5.1,
-      controle: 9.4,
-      aceleracao: 8.1,
-      arrancada: 9.3,
-      frenagem: 8.1
+    {
+        marca: "Dodge",
+        modelo: "Challenger SRT8 392",
+        ano: "2012",
+        classe: "SPORT CARS",
+        logo: "imagens/dodge/logo-dodge.png",
+        imagem: "imagens/dodge/challengersrt8.png",
+        nivel: "classe-tracao/classe-nivel/s-507.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 7,
+            controle: 8,
+            aceleracao: 7.3,
+            arrancada: 8,
+            frenagem: 7.3
+        },
+        preco: "45.000"
     },
-    preco: "32.000"
-  },
-  {
-    marca: "Chevrolet",
-    modelo: "Camaro ZL1",
-    ano: "2012",
-    classe: "SPORT CARS",
-    logo: "imagens/chevrolet/logo-chevrolet.png",
-    imagem: "imagens/chevrolet-camarozl1.png",
-    nivel: "classe-tracao/classe-nivel/s-579.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
+    {
+        marca: "Ford",
+        modelo: "Mustang Boss 429",
+        ano: "1970",
+        classe: "SPORT CARS",
+        logo: "imagens/ford/logo-ford.png",
+        imagem: "imagens/ford/mustang/boss429.png",
+        nivel: "classe-tracao/classe-nivel/d-380.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 4.7,
+            controle: 6.5,
+            aceleracao: 4.9,
+            arrancada: 6.2,
+            frenagem: 6.5
+        },
+        preco: "120.000"
     },
-    stats: {
-      velocidade: 6.7,
-      controle: 8,
-      aceleracao: 8.5,
-      arrancada: 8,
-      frenagem: 8.4
+    {
+        marca: "Peugeot",
+        modelo: "205 Turbo 16",
+        ano: "1984",
+        classe: "HATCHBACK",
+        logo: "imagens/peugeot/logo-peugeot.png",
+        imagem: "imagens/peugeot/205turbo.png",
+        nivel: "classe-tracao/classe-nivel/c-333.png",
+        tracao: {
+            tipo: "AWD",
+            imagem: "imagens/classe-tracao/tracao-4x4.png"
+        },
+        stats: {
+            velocidade: 4,
+            controle: 6,
+            aceleracao: 5.9,
+            arrancada: 7.9,
+            frenagem: 6
+        },
+        preco: "120.000"
     },
-    preco: "45.000"
-  },
-  {
-    marca: "Dodge",
-    modelo: "Challenger SRT8 392",
-    ano: "2012",
-    classe: "SPORT CARS",
-    logo: "imagens/dodge/logo-dodge.png",
-    imagem: "imagens/dodge-challengersrt8.png",
-    nivel: "classe-tracao/classe-nivel/s-507.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
+    {
+        marca: "Lancia",
+        modelo: "Delta Integrale EVO",
+        ano: "1992",
+        classe: "HATCHBACK",
+        logo: "imagens/lancia/logo-lancia.png",
+        imagem: "imagens/lancia/deltaevo.png",
+        nivel: "classe-tracao/classe-nivel/c-335.png",
+        tracao: {
+            tipo: "AWD",
+            imagem: "imagens/classe-tracao/tracao-4x4.png"
+        },
+        stats: {
+            velocidade: 3.9,
+            controle: 7.8,
+            aceleracao: 6.3,
+            arrancada: 7.2,
+            frenagem: 7.4
+        },
+        preco: "22.000"
     },
-    stats: {
-      velocidade: 7,
-      controle: 8,
-      aceleracao: 7.3,
-      arrancada: 8,
-      frenagem: 7.3
+    {
+        marca: "Volkswagen",
+        modelo: "Golf GTI 16v MK2",
+        ano: "1992",
+        classe: "HATCHBACK",
+        logo: "imagens/volkswagen/logo-volkswagen.png",
+        imagem: "imagens/volkswagen/golfgti.png",
+        nivel: "classe-tracao/classe-nivel/d-387.png",
+        tracao: {
+            tipo: "FWD",
+            imagem: "imagens/classe-tracao/tracao-dianteira.png"
+        },
+        stats: {
+            velocidade: 3.2,
+            controle: 8,
+            aceleracao: 4.8,
+            arrancada: 5.2,
+            frenagem: 7.7
+        },
+        preco: "20.000"
     },
-    preco: "45.000"
-  },
-  {
-    marca: "Ford",
-    modelo: "Mustang Boss 429",
-    ano: "1970",
-    classe: "SPORT CARS",
-    logo: "imagens/ford/logo-ford.png",
-    imagem: "imagens/ford-boss429.png",
-    nivel: "classe-tracao/classe-nivel/d-380.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
+    {
+        marca: "Mini",
+        modelo: "Cooper S",
+        ano: "1965",
+        classe: "ECONOMY",
+        logo: "imagens/mini/logo-mini.png",
+        imagem: "imagens/mini/s.png",
+        nivel: "classe-tracao/classe-nivel/e-171.png",
+        tracao: {
+            tipo: "DWD",
+            imagem: "imagens/classe-tracao/tracao-dianteira.png"
+        },
+        stats: {
+            velocidade: 3,
+            controle: 7.6,
+            aceleracao: 5,
+            arrancada: 5.2,
+            frenagem: 7.3
+        },
+        preco: "20.000"
     },
-    stats: {
-      velocidade: 4.7,
-      controle: 6.5,
-      aceleracao: 4.9,
-      arrancada: 6.2,
-      frenagem: 6.5
+    {
+        
     },
-    preco: "120.000"
-  },
-  {
-    marca: "Peugeot",
-    modelo: "205 Turbo 16",
-    ano: "1984",
-    classe: "HATCHBACK",
-    logo: "imagens/peugeot/logo-peugeot.png",
-    imagem: "imagens/peugeot-205turbo.png",
-    nivel: "classe-tracao/classe-nivel/c-333.png",
-    tracao: {
-      tipo: "AWD",
-      imagem: "imagens/classe-tracao/tracao-4x4.png"
+    {
+        marca: "Toyota",
+        modelo: "Sprinter Trueno GT Apex",
+        ano: "1985",
+        classe: "SPORT CAR",
+        logo: "imagens/toyota/logo-toyota.png",
+        imagem: "imagens/toyota/sprinter.png",
+        nivel: "classe-tracao/classe-nivel/d-273.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 3.5,
+            controle: 7.9,
+            aceleracao: 5.9,
+            arrancada: 6,
+            frenagem: 7.7
+        },
+        preco: "6.000"
     },
-    stats: {
-      velocidade: 4,
-      controle: 6,
-      aceleracao: 5.9,
-      arrancada: 7.9,
-      frenagem: 6
+    {
+        marca: "Mazda",
+        modelo: "MX-5 Miata",
+        ano: "1994",
+        classe: "SPORT CAR",
+        logo: "imagens/mazda/logo-mazda.png",
+        imagem: "imagens/mazda/miata.png",
+        nivel: "classe-tracao/classe-nivel/e-226.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 3.1,
+            controle: 8.3,
+            aceleracao: 4.9,
+            arrancada: 5.2,
+            frenagem: 8.1
+        },
+        preco: "7.000"
     },
-    preco: "120.000"
-  },
-  {
-    marca: "Lancia",
-    modelo: "Delta Integrale EVO",
-    ano: "1992",
-    classe: "HATCHBACK",
-    logo: "imagens/lancia/logo-lancia.png",
-    imagem: "imagens/lancia-deltaevo.png",
-    nivel: "classe-tracao/classe-nivel/c-335.png",
-    tracao: {
-      tipo: "AWD",
-      imagem: "imagens/classe-tracao/tracao-4x4.png"
+    {
+        marca: "Mercedes-Benz",
+        modelo: "SL 65 AMG Black Series",
+        ano: "2009",
+        classe: "SUPER GT",
+        logo: "imagens/mercedes/logo-mercedes.png",
+        imagem: "imagens/mercedes/sl65amg.png",
+        nivel: "classe-tracao/classe-nivel/s-563.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 8.6,
+            controle: 8.5,
+            aceleracao: 7.8,
+            arrancada: 8.1,
+            frenagem: 6.6
+        },
+        preco: "195.000"
     },
-    stats: {
-      velocidade: 3.9,
-      controle: 7.8,
-      aceleracao: 6.3,
-      arrancada: 7.2,
-      frenagem: 7.4
+    {
+        marca: "Jaguar",
+        modelo: "E-Type S1",
+        ano: "2016",
+        classe: "SPORT CAR",
+        logo: "imagens/jaguar/logo-jaguar.png",
+        imagem: "imagens/jaguar/ETypeS1.png",
+        nivel: "classe-tracao/classe-nivel/s-270.png",
+        tracao: {
+            tipo: "AWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 4.3,
+            controle: 7.3,
+            aceleracao: 5.6,
+            arrancada: 5,
+            frenagem: 6
+        },
+        preco: "150.000"
     },
-    preco: "22.000"
-  },
-  {
-    marca: "Volkswagen",
-    modelo: "Golf GTI 16v MK2",
-    ano: "1992",
-    classe: "HATCHBACK",
-    logo: "imagens/volkswagen/logo-volkswagen.png",
-    imagem: "imagens/volkswagen-golfgti.png",
-    nivel: "classe-tracao/classe-nivel/d-387.png",
-    tracao: {
-      tipo: "FWD",
-      imagem: "imagens/classe-tracao/tracao-dianteira.png"
+    {
+        marca: "Shelby",
+        modelo: "Cobra Daytona Coupe",
+        ano: "1964",
+        classe: "SPORT CAR",
+        logo: "imagens/ford/logo-ford.png",
+        imagem: "imagens/ford/shelby/daytonacoupe.png",
+        nivel: "classe-tracao/classe-nivel/s-529.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 7.3,
+            controle: 8.3,
+            aceleracao: 7.7,
+            arrancada: 6.1,
+            frenagem: 7.6
+        },
+        preco: "500.000"
     },
-    stats: {
-      velocidade: 3.2,
-      controle: 8,
-      aceleracao: 4.8,
-      arrancada: 5.2,
-      frenagem: 7.7
+    {
+        marca: "Ferrari",
+        modelo: "250 Testa Rossa",
+        ano: "1957",
+        classe: "OPEN TOP",
+        logo: "imagens/ferrari/logo-ferrari.png",
+        imagem: "imagens/ferrari/250testarossa.png",
+        nivel: "classe-tracao/classe-nivel/s-364.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 5.9,
+            controle: 7,
+            aceleracao: 7.6,
+            arrancada: 6.6,
+            frenagem: 7.1
+        },
+        preco: "1000.000"
     },
-    preco: "20.000"
-  },
-  {
-    marca: "Mini",
-    modelo: "Cooper S",
-    ano: "1965",
-    classe: "ECONOMY",
-    logo: "imagens/mini/logo-mini.png",
-    imagem: "imagens/mini-t.png",
-    nivel: "classe-tracao/classe-nivel/e-171.png",
-    tracao: {
-      tipo: "DWD",
-      imagem: "imagens/classe-tracao/tracao-dianteira.png"
+    {
+        marca: "Lamborghini",
+        modelo: "Diablo SV",
+        ano: "1997",
+        classe: "SUPER CAR",
+        logo: "imagens/lamborghini/logo-lamborghini.png",
+        imagem: "imagens/lamborghini/diablosv.png",
+        nivel: "classe-tracao/classe-nivel/s-567.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 8.4,
+            controle: 8.8,
+            aceleracao: 7.8,
+            arrancada: 7.1,
+            frenagem: 8.5
+        },
+        preco: "200.000"
     },
-    stats: {
-      velocidade: 3,
-      controle: 7.6,
-      aceleracao: 5,
-      arrancada: 5.2,
-      frenagem: 7.3
-    },
-    preco: "20.000"
-  },
-  {
-    marca: "Toyota",
-    modelo: "Sprinter Trueno GT Apex",
-    ano: "1985",
-    classe: "SPORT CAR",
-    logo: "imagens/toyota/logo-toyota.png",
-    imagem: "imagens/toyota-ae86.png",
-    nivel: "classe-tracao/classe-nivel/d-273.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 3.5,
-      controle: 7.9,
-      aceleracao: 5.9,
-      arrancada: 6,
-      frenagem: 7.7
-    },
-    preco: "6.000"
-  },
-  {
-    marca: "Honda",
-    modelo: "Civic Type-R",
-    ano: "2014",
-    classe: "HATCHBACK",
-    logo: "imagens/honda/logo-honda.png",
-    imagem: "imagens/honda-civictyper.png",
-    nivel: "classe-tracao/classe-nivel/d-342.png",
-    tracao: {
-      tipo: "DWD",
-      imagem: "imagens/classe-tracao/tracao-dianteira.png"
-    },
-    stats: {
-      velocidade: 4,
-      controle: 7.9,
-      aceleracao: 6.3,
-      arrancada: 7.5,
-      frenagem: 7.9
-    },
-    preco: "12.000"
-  },
-  {
-    marca: "Mazda",
-    modelo: "MX-5 Miata",
-    ano: "1994",
-    classe: "SPORT CAR",
-    logo: "imagens/mazda/logo-mazda.png",
-    imagem: "imagens/mazda-miata.png",
-    nivel: "classe-tracao/classe-nivel/e-226.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 3.1,
-      controle: 8.3,
-      aceleracao: 4.9,
-      arrancada: 5.2,
-      frenagem: 8.1
-    },
-    preco: "7.000"
-  },
-  {
-    marca: "Mercedes-Benz",
-    modelo: "SL 65 AMG Black Series",
-    ano: "2009",
-    classe: "SUPER GT",
-    logo: "imagens/mercedes/logo-mercedes.png",
-    imagem: "imagens/mercedes-sl65amg.png",
-    nivel: "classe-tracao/classe-nivel/s-563.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 8.6,
-      controle: 8.5,
-      aceleracao: 7.8,
-      arrancada: 8.1,
-      frenagem: 6.6
-    },
-    preco: "195.000"
-  },
-  {
-    marca: "Jaguar",
-    modelo: "E-Type S1",
-    ano: "2016",
-    classe: "SPORT CAR",
-    logo: "imagens/jaguar/logo-jaguar.png",
-    imagem: "imagens/jaguar-ETypeS1.png",
-    nivel: "classe-tracao/classe-nivel/s-270.png",
-    tracao: {
-      tipo: "AWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 4.3,
-      controle: 7.3,
-      aceleracao: 5.6,
-      arrancada: 5,
-      frenagem: 6
-    },
-    preco: "150.000"
-  },
-  {
-    marca: "Shelby",
-    modelo: "Cobra Daytona Coupe",
-    ano: "1964",
-    classe: "SPORT CAR",
-    logo: "imagens/ford/logo-ford.png",
-    imagem: "imagens/shelby-daytonacoupe.png",
-    nivel: "classe-tracao/classe-nivel/s-529.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 7.3,
-      controle: 8.3,
-      aceleracao: 7.7,
-      arrancada: 6.1,
-      frenagem: 7.6
-    },
-    preco: "500.000"
-  },
-  {
-    marca: "Ferrari",
-    modelo: "250 Testa Rossa",
-    ano: "1957",
-    classe: "OPEN TOP",
-    logo: "imagens/ferrari/logo-ferrari.png",
-    imagem: "imagens/ferrari-250testarossa.png",
-    nivel: "classe-tracao/classe-nivel/s-364.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 5.9,
-      controle: 7,
-      aceleracao: 7.6,
-      arrancada: 6.6,
-      frenagem: 7.1
-    },
-    preco: "1000.000"
-  },
-  {
-    marca: "Lamborghini",
-    modelo: "Diablo SV",
-    ano: "1997",
-    classe: "SUPER CAR",
-    logo: "imagens/lamborghini/logo-lamborghini.png",
-    imagem: "imagens/lamborghini-diablosv.png",
-    nivel: "classe-tracao/classe-nivel/s-567.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 8.4,
-      controle: 8.8,
-      aceleracao: 7.8,
-      arrancada: 7.1,
-      frenagem: 8.5
-    },
-    preco: "200.000"
-  },
-  {
-    marca: "McLaren",
-    modelo: "MP4-12C",
-    ano: "2011",
-    classe: "MODERN SUPER CAR",
-    logo: "imagens/mclaren/logo-mclaren.png",
-    imagem: "imagens/mclaren-mp412c.png",
-    nivel: "classe-tracao/classe-nivel/s-687.png",
-    tracao: {
-      tipo: "RWD",
-      imagem: "imagens/classe-tracao/tracao-traseira.png"
-    },
-    stats: {
-      velocidade: 9.2,
-      controle: 9.2,
-      aceleracao: 8.6,
-      arrancada: 7.5,
-      frenagem: 9
-    },
-    preco: "240.000"
-  }
+    {
+        marca: "McLaren",
+        modelo: "MP4-12C",
+        ano: "2011",
+        classe: "MODERN SUPER CAR",
+        logo: "imagens/mclaren/logo-mclaren.png",
+        imagem: "imagens/mclaren/mp412c.png",
+        nivel: "classe-tracao/classe-nivel/s-687.png",
+        tracao: {
+            tipo: "RWD",
+            imagem: "imagens/classe-tracao/tracao-traseira.png"
+        },
+        stats: {
+            velocidade: 9.2,
+            controle: 9.2,
+            aceleracao: 8.6,
+            arrancada: 7.5,
+            frenagem: 9
+        },
+        preco: "240.000"
+    }
 ];
 
 function exibirCarro(index) {
