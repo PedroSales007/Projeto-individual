@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/garagem.css">
+    <link rel="stylesheet" href="styles/geral.css">
+    <title>Horizon Tuner</title>
+</head>
+
+<body>
+    <button onclick="voltar()" class="voltar">
+        <img src="imagens/body/seta-saida.png" alt="" width="30px">
+    </button>
+    <main>
+        <div class="comprar">Garagem</div>
+        <div class="container">
+            <section class="marcadores">
+                <div class="marca">
+                    <picture class="marcaCarro" id="marcaCarro">
+
+                    </picture>
+                </div>
+                <div class="valorCR">
+                    <img src="imagens/moeda/cr-moeda.png" alt="" width="30px">
+                    <span class="valor" id="valorCR"></span>
+                </div>
+                <div class="config" id="config" onclick="favoritos()">
+                </div>
+            </section>
+
+            <section class="containerCarro">
+                <header>
+                    <div class="conjunto">
+                        <div class="nomeMarca" id="nomeMarca"></div>
+                        <div class="nomeModelo" id="nomeModelo"></div>
+                        <div class="modeloAno" id="modeloAno"></div>
+                    </div>
+                    <div class="classe" id="classe"></div>
+                </header>
+                <div class="imgCarro" id="imgCarro">
+
+                </div>
+            </section>
+
+            <section class="segmentosGeral">
+                <div class="classe-tracao">
+                    <div class="nivel" id="nivel">
+                    </div>
+                    <div class="tracao" id="tracao">
+                        <span id="legendaTracao"></span>
+                        <span id="imgTracao"></span>
+                    </div>
+                </div>
+
+                <div class="segmentos">
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Velocidade
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemVelocidade"></div>
+                            </div>
+                        </div>
+                        <div id="velocidade"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Controle
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemControle"></div>
+                            </div>
+                        </div>
+                        <div id="controle"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Acelereção
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemAceleracao"></div>
+                            </div>
+                        </div>
+                        <div id="aceleracao"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Arrancada
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemArrancagem"></div>
+                            </div>
+                        </div>
+                        <div id="arrancada"></div>
+                    </div>
+                    <div class="seg-conjunto">
+                        <div class="velocidade">
+                            Frenagem
+                            <div class="marcadorPorcentagem">
+                                <div class="nivelPorcentagem" id="nivelPorcentagemFrenagem"></div>
+                            </div>
+                        </div>
+                        <div id="frenagem"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="escolherCarro">
+            <div class="carrossel">
+                <div class="change" onclick="exibirCarro(0)"><img src="imagens/viper/viper-gts.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(1)"><img src="imagens/ferrari/f40/f40.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(2)"><img src="imagens/ferrari/458/458.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(3)"><img src="imagens/bugatti/bugatti-veyron.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(4)"><img src="imagens/lamborghini/lambo-aventador.png" alt="">
+                </div>
+                <div class="change" onclick="exibirCarro(5)"><img src="imagens/Pagani/zonda.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(6)"><img src="imagens/koenigsegg/azera.png" alt=""></div>
+
+                <div class="change" onclick="exibirCarro(7)"><img src="imagens/ford/gt/fordGT.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(8)"><img src="imagens/audi/sportQuattro.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(9)"><img src="imagens/lancia/lancia.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(10)"><img src="imagens/nissan/nissan-gtr.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(11)"><img src="imagens/toyota/supra-rz.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(12)"><img src="imagens/chevrolet/camaroSS.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(13)"><img src="imagens/dodge/charge.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(14)"><img src="imagens/ford/mustang/mustang.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(15)"><img src="imagens/ford/shelby/cobra.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(16)"><img src="imagens/subaru/impreza.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(17)"><img src="imagens/mazda/rx-7.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(18)"><img src="imagens/mclaren/f1.png" alt=""></div>
+                <div class="change" onclick="exibirCarro(19)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(20)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(21)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(22)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(23)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(24)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(25)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(26)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(27)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(28)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(29)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(30)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(31)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(32)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(33)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(34)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(35)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(36)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(37)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(38)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(39)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(40)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(41)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(42)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(43)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(44)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(45)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(46)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(48)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(49)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(50)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(51)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(52)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(53)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(54)"><img src="imagens/" alt=""></div>
+                <div class="change" onclick="exibirCarro(55)"><img src="imagens/" alt=""></div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
+<script>
+    function voltar() {
+        window.location = "aposLogin.html"
+    }
+</script>
+
+<script src="javaScript/garagemEscolhaCarro.js"></script>
