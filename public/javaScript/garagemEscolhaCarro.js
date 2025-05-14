@@ -19,7 +19,6 @@ const carros = [
             frenagem: 9.5
         },
         preco: "110.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ferrari",
@@ -63,7 +62,6 @@ const carros = [
             frenagem: 9.0
         },
         preco: "240.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Bugatti",
@@ -85,7 +83,6 @@ const carros = [
             frenagem: 9.4
         },
         preco: "2.200.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Lamborghini",
@@ -107,7 +104,6 @@ const carros = [
             frenagem: 8.9
         },
         preco: "400.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Pagani",
@@ -129,7 +125,6 @@ const carros = [
             frenagem: 10
         },
         preco: "1.700.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Koenigsegg",
@@ -151,7 +146,6 @@ const carros = [
             frenagem: 9.4
         },
         preco: "1.400.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
@@ -173,7 +167,6 @@ const carros = [
             frenagem: 8.7
         },
         preco: "150.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Audi",
@@ -195,7 +188,6 @@ const carros = [
             frenagem: 7.9
         },
         preco: "120.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Lancia",
@@ -217,7 +209,6 @@ const carros = [
             frenagem: 7.4
         },
         preco: "50.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Nissan",
@@ -239,7 +230,6 @@ const carros = [
             frenagem: 8.3
         },
         preco: "52.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Toyota",
@@ -261,7 +251,6 @@ const carros = [
             frenagem: 8.0
         },
         preco: "8000.00",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Chevrolet",
@@ -283,7 +272,6 @@ const carros = [
             frenagem: 6.1
         },
         preco: "45.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Dodge",
@@ -305,7 +293,6 @@ const carros = [
             frenagem: 6.1
         },
         preco: "64.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
@@ -327,7 +314,6 @@ const carros = [
             frenagem: 8.2
         },
         preco: "42.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ford",
@@ -349,7 +335,6 @@ const carros = [
             frenagem: 7.1
         },
         preco: "900.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Subaru",
@@ -371,7 +356,6 @@ const carros = [
             frenagem: 8.5
         },
         preco: "35.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Mazda",
@@ -393,7 +377,6 @@ const carros = [
             frenagem: 7.7
         },
         preco: "18.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Mclaren",
@@ -415,7 +398,6 @@ const carros = [
             frenagem: 9.1
         },
         preco: "1.500.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Abarth",
@@ -437,7 +419,6 @@ const carros = [
             frenagem: 7.9
         },
         preco: "20.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Alfa Romeu",
@@ -459,7 +440,6 @@ const carros = [
             frenagem: 8.4
         },
         preco: "280.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Alfa Romeu",
@@ -481,7 +461,6 @@ const carros = [
             frenagem: 9.1
         },
         preco: "600.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ascari",
@@ -503,7 +482,6 @@ const carros = [
             frenagem: 9.0
         },
         preco: "350.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Aston Martin",
@@ -525,7 +503,6 @@ const carros = [
             frenagem: 6.4
         },
         preco: "Lugares escondidos",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Aston Martin",
@@ -547,7 +524,6 @@ const carros = [
             frenagem: 8.5
         },
         preco: "250.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ferrari",
@@ -569,7 +545,6 @@ const carros = [
             frenagem: 7.3
         },
         preco: "10.000.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Pagani",
@@ -591,7 +566,6 @@ const carros = [
             frenagem: 9.3
         },
         preco: "1.800.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Hennessey",
@@ -613,7 +587,6 @@ const carros = [
             frenagem: 9.5
         },
         preco: "1.000.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Ferrari",
@@ -635,7 +608,6 @@ const carros = [
             frenagem: 9.6
         },
         preco: "1.300.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Mercedes-benz",
@@ -657,7 +629,6 @@ const carros = [
             frenagem: 8.8
         },
         preco: "270.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Aston Martin",
@@ -679,7 +650,6 @@ const carros = [
             frenagem: 9
         },
         preco: "960.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Audi",
@@ -701,7 +671,6 @@ const carros = [
             frenagem: 9
         },
         preco: "195.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "BMW",
@@ -723,7 +692,6 @@ const carros = [
             frenagem: 8.5
         },
         preco: "120.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Nissan",
@@ -745,7 +713,6 @@ const carros = [
             frenagem: 8.7
         },
         preco: "120.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Chevrolet",
@@ -767,7 +734,6 @@ const carros = [
             frenagem: 9.0
         },
         preco: "100.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Viper",
@@ -789,7 +755,6 @@ const carros = [
             frenagem: 10
         },
         preco: "100.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Lamborghini",
@@ -811,7 +776,6 @@ const carros = [
             frenagem: 6.7
         },
         preco: "Lugares escondidos",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Mitsubishi",
@@ -833,7 +797,6 @@ const carros = [
             frenagem: 8.2
         },
         preco: "29.000",
-        linkConfig: "screens/login.html"
     },
     {
         marca: "Honda",
@@ -842,10 +805,10 @@ const carros = [
         classe: "SPORTCAR",
         logo: "imagens/honda/logo-honda.png",
         imagem: "imagens/honda/nsxR-gt.png",
-        nivel: "classe-tracao/classe-nivel/s-541.png",
+        nivel: "imagens/classe-tracao/niveis/s-541.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 6.5,
@@ -863,10 +826,10 @@ const carros = [
         classe: "SUPERLIGHT",
         logo: "imagens/lotus/logo-lotus.png",
         imagem: "imagens/lotus/exigecup.png",
-        nivel: "classe-tracao/classe-nivel/a-528.png",
+        nivel: "imagens/classe-tracao/niveis/a-528.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 5.1,
@@ -884,10 +847,10 @@ const carros = [
         classe: "SPORT CARS",
         logo: "imagens/chevrolet/logo-chevrolet.png",
         imagem: "imagens/chevrolet/zl1.png",
-        nivel: "classe-tracao/classe-nivel/s-579.png",
+        nivel: "imagens/classe-tracao/niveis/s-579.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 6.7,
@@ -905,10 +868,10 @@ const carros = [
         classe: "SPORT CARS",
         logo: "imagens/dodge/logo-dodge.png",
         imagem: "imagens/dodge/challengersrt8.png",
-        nivel: "classe-tracao/classe-nivel/s-507.png",
+        nivel: "imagens/classe-tracao/niveis/s-507.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 7,
@@ -926,10 +889,10 @@ const carros = [
         classe: "SPORT CARS",
         logo: "imagens/ford/logo-ford.png",
         imagem: "imagens/ford/mustang/boss429.png",
-        nivel: "classe-tracao/classe-nivel/d-380.png",
+        nivel: "imagens/classe-tracao/niveis/d-380.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 4.7,
@@ -947,10 +910,10 @@ const carros = [
         classe: "HATCHBACK",
         logo: "imagens/peugeot/logo-peugeot.png",
         imagem: "imagens/peugeot/205turbo.png",
-        nivel: "classe-tracao/classe-nivel/c-333.png",
+        nivel: "imagens/classe-tracao/niveis/c-333.png",
         tracao: {
             tipo: "AWD",
-            imagem: "imagens/classe-tracao/tracao-4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 4,
@@ -968,10 +931,10 @@ const carros = [
         classe: "HATCHBACK",
         logo: "imagens/lancia/logo-lancia.png",
         imagem: "imagens/lancia/deltaevo.png",
-        nivel: "classe-tracao/classe-nivel/c-335.png",
+        nivel: "imagens/classe-tracao/niveis/c-335.png",
         tracao: {
             tipo: "AWD",
-            imagem: "imagens/classe-tracao/tracao-4x4.png"
+            imagem: "imagens/classe-tracao/4x4.png"
         },
         stats: {
             velocidade: 3.9,
@@ -989,7 +952,7 @@ const carros = [
         classe: "HATCHBACK",
         logo: "imagens/volkswagen/logo-volkswagen.png",
         imagem: "imagens/volkswagen/golfgti.png",
-        nivel: "classe-tracao/classe-nivel/d-387.png",
+        nivel: "imagens/classe-tracao/niveis/d-387.png",
         tracao: {
             tipo: "FWD",
             imagem: "imagens/classe-tracao/tracao-dianteira.png"
@@ -1010,7 +973,7 @@ const carros = [
         classe: "ECONOMY",
         logo: "imagens/mini/logo-mini.png",
         imagem: "imagens/mini/s.png",
-        nivel: "classe-tracao/classe-nivel/e-171.png",
+        nivel: "imagens/classe-tracao/niveis/e-171.png",
         tracao: {
             tipo: "DWD",
             imagem: "imagens/classe-tracao/tracao-dianteira.png"
@@ -1025,7 +988,7 @@ const carros = [
         preco: "20.000"
     },
     {
-        
+
     },
     {
         marca: "Toyota",
@@ -1034,10 +997,10 @@ const carros = [
         classe: "SPORT CAR",
         logo: "imagens/toyota/logo-toyota.png",
         imagem: "imagens/toyota/sprinter.png",
-        nivel: "classe-tracao/classe-nivel/d-273.png",
+        nivel: "imagens/classe-tracao/niveis/d-273.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 3.5,
@@ -1055,10 +1018,10 @@ const carros = [
         classe: "SPORT CAR",
         logo: "imagens/mazda/logo-mazda.png",
         imagem: "imagens/mazda/miata.png",
-        nivel: "classe-tracao/classe-nivel/e-226.png",
+        nivel: "imagens/classe-tracao/niveis/e-226.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 3.1,
@@ -1076,10 +1039,10 @@ const carros = [
         classe: "SUPER GT",
         logo: "imagens/mercedes/logo-mercedes.png",
         imagem: "imagens/mercedes/sl65amg.png",
-        nivel: "classe-tracao/classe-nivel/s-563.png",
+        nivel: "imagens/classe-tracao/niveis/s-563.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.6,
@@ -1097,10 +1060,10 @@ const carros = [
         classe: "SPORT CAR",
         logo: "imagens/jaguar/logo-jaguar.png",
         imagem: "imagens/jaguar/ETypeS1.png",
-        nivel: "classe-tracao/classe-nivel/s-270.png",
+        nivel: "imagens/classe-tracao/niveis/s-270.png",
         tracao: {
             tipo: "AWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 4.3,
@@ -1118,10 +1081,10 @@ const carros = [
         classe: "SPORT CAR",
         logo: "imagens/ford/logo-ford.png",
         imagem: "imagens/ford/shelby/daytonacoupe.png",
-        nivel: "classe-tracao/classe-nivel/s-529.png",
+        nivel: "imagens/classe-tracao/niveis/s-529.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 7.3,
@@ -1139,10 +1102,10 @@ const carros = [
         classe: "OPEN TOP",
         logo: "imagens/ferrari/logo-ferrari.png",
         imagem: "imagens/ferrari/250testarossa.png",
-        nivel: "classe-tracao/classe-nivel/s-364.png",
+        nivel: "imagens/classe-tracao/niveis/s-364.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 5.9,
@@ -1160,10 +1123,10 @@ const carros = [
         classe: "SUPER CAR",
         logo: "imagens/lamborghini/logo-lamborghini.png",
         imagem: "imagens/lamborghini/diablosv.png",
-        nivel: "classe-tracao/classe-nivel/s-567.png",
+        nivel: "imagens/classe-tracao/niveis/s-567.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 8.4,
@@ -1181,10 +1144,10 @@ const carros = [
         classe: "MODERN SUPER CAR",
         logo: "imagens/mclaren/logo-mclaren.png",
         imagem: "imagens/mclaren/mp412c.png",
-        nivel: "classe-tracao/classe-nivel/s-687.png",
+        nivel: "imagens/classe-tracao/niveis/s-687.png",
         tracao: {
             tipo: "RWD",
-            imagem: "imagens/classe-tracao/tracao-traseira.png"
+            imagem: "imagens/classe-tracao/tracao-trazeira.png"
         },
         stats: {
             velocidade: 9.2,
