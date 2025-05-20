@@ -1,5 +1,6 @@
 const carros = [
     {
+        id: 1,
         marca: "Viper",
         modelo: "GTS",
         ano: "2013",
@@ -21,6 +22,7 @@ const carros = [
         preco: "110.000",
     },
     {
+        id: 2,
         marca: "Ferrari",
         modelo: "F40",
         ano: "1987",
@@ -42,6 +44,7 @@ const carros = [
         preco: "8000.000",
     },
     {
+        id: 3,
         marca: "Ferrari",
         modelo: "458 Italia",
         ano: "2009",
@@ -63,6 +66,7 @@ const carros = [
         preco: "240.000",
     },
     {
+        id: 4,
         marca: "Bugatti",
         modelo: "Veyron Super Sport",
         ano: "2011",
@@ -84,6 +88,7 @@ const carros = [
         preco: "2.200.000",
     },
     {
+        id: 5,
         marca: "Lamborghini",
         modelo: "Aventador LP700-4",
         ano: "2012",
@@ -105,6 +110,7 @@ const carros = [
         preco: "400.000",
     },
     {
+        id: 6,
         marca: "Pagani",
         modelo: "Zonda R",
         ano: "2010",
@@ -126,6 +132,7 @@ const carros = [
         preco: "1.700.000",
     },
     {
+        id: 7,
         marca: "Koenigsegg",
         modelo: "Agera",
         ano: "2011",
@@ -147,6 +154,7 @@ const carros = [
         preco: "1.400.000",
     },
     {
+        id: 8,
         marca: "Ford",
         modelo: "GT",
         ano: "2005",
@@ -168,6 +176,7 @@ const carros = [
         preco: "150.000",
     },
     {
+        id: 9,
         marca: "Audi",
         modelo: "Sport Quattro",
         ano: "1983",
@@ -189,6 +198,7 @@ const carros = [
         preco: "120.000",
     },
     {
+        id: 10,
         marca: "Lancia",
         modelo: "Stratos HF Stradale",
         ano: "1974",
@@ -210,6 +220,7 @@ const carros = [
         preco: "50.000",
     },
     {
+        id: 11,
         marca: "Nissan",
         modelo: "Skyline GTR-R",
         ano: "2000",
@@ -231,6 +242,7 @@ const carros = [
         preco: "52.000",
     },
     {
+        id: 12,
         marca: "Toyota",
         modelo: "Supra RZ",
         ano: "2013",
@@ -252,6 +264,7 @@ const carros = [
         preco: "8000.00",
     },
     {
+        id: 13,
         marca: "Chevrolet",
         modelo: "Camaro SS",
         ano: "1969",
@@ -273,6 +286,7 @@ const carros = [
         preco: "45.000",
     },
     {
+        id: 14,
         marca: "Dodge",
         modelo: "Charge R/T-SE",
         ano: "1969",
@@ -294,6 +308,7 @@ const carros = [
         preco: "64.000",
     },
     {
+        id: 15,
         marca: "Ford",
         modelo: "Mustang Boss 302",
         ano: "2013",
@@ -315,6 +330,7 @@ const carros = [
         preco: "42.000",
     },
     {
+        id: 16,
         marca: "Ford",
         modelo: "Shelby Cobra 427 S/C",
         ano: "1965",
@@ -336,6 +352,7 @@ const carros = [
         preco: "900.000",
     },
     {
+        id: 17,
         marca: "Subaru",
         modelo: "Impreza 22B STi",
         ano: "1998",
@@ -357,6 +374,7 @@ const carros = [
         preco: "35.000",
     },
     {
+        id: 18,
         marca: "Mazda",
         modelo: "rx-7",
         ano: "1997",
@@ -378,6 +396,7 @@ const carros = [
         preco: "18.000",
     },
     {
+        id: 19,
         marca: "Mclaren",
         modelo: "F1",
         ano: "1993",
@@ -399,6 +418,7 @@ const carros = [
         preco: "1.500.000",
     },
     {
+        id: 20,
         marca: "Abarth",
         modelo: "500 esseesse",
         ano: "2010",
@@ -420,6 +440,7 @@ const carros = [
         preco: "20.000",
     },
     {
+        id: 21,
         marca: "Alfa Romeu",
         modelo: "8C Competizione",
         ano: "2007",
@@ -441,6 +462,7 @@ const carros = [
         preco: "280.000",
     },
     {
+        id: 22,
         marca: "Alfa Romeu",
         modelo: "TZ3 Stradale Zagato",
         ano: "2011",
@@ -462,6 +484,7 @@ const carros = [
         preco: "600.000",
     },
     {
+        id: 23,
         marca: "Ascari",
         modelo: "KZ1R",
         ano: "2012",
@@ -483,6 +506,7 @@ const carros = [
         preco: "350.000",
     },
     {
+        id: 24,
         marca: "Aston Martin",
         modelo: "DB5 Vantage",
         ano: "1964",
@@ -504,6 +528,7 @@ const carros = [
         preco: "Lugares escondidos",
     },
     {
+        id: 25,
         marca: "Aston Martin",
         modelo: "DB5",
         ano: "2008",
@@ -525,6 +550,7 @@ const carros = [
         preco: "250.000",
     },
     {
+        id: 26,
         marca: "Ferrari",
         modelo: "250 GTO",
         ano: "1964",
@@ -546,6 +572,7 @@ const carros = [
         preco: "10.000.000",
     },
     {
+        id: 27,
         marca: "Pagani",
         modelo: "Huayra",
         ano: "2012",
@@ -567,6 +594,7 @@ const carros = [
         preco: "1.800.000",
     },
     {
+        id: 28,
         marca: "Hennessey",
         modelo: "Venom GT",
         ano: "2012",
@@ -588,6 +616,7 @@ const carros = [
         preco: "1.000.000",
     },
     {
+        id: 29,
         marca: "Ferrari",
         modelo: "Enzo Ferrari",
         ano: "2002",
@@ -609,6 +638,7 @@ const carros = [
         preco: "1.300.000",
     },
     {
+        id: 30,
         marca: "Mercedes-benz",
         modelo: "SLS AMG",
         ano: "2011",
@@ -630,6 +660,7 @@ const carros = [
         preco: "270.000",
     },
     {
+        id: 31,
         marca: "Aston Martin",
         modelo: "ONE-77",
         ano: "2010",
@@ -651,6 +682,7 @@ const carros = [
         preco: "960.000",
     },
     {
+        id: 32,
         marca: "Audi",
         modelo: "R8 GT COUPE",
         ano: "2011",
@@ -672,6 +704,7 @@ const carros = [
         preco: "195.000",
     },
     {
+        id: 33,
         marca: "BMW",
         modelo: "M3 GTR",
         ano: "2002",
@@ -693,6 +726,7 @@ const carros = [
         preco: "120.000",
     },
     {
+        id: 34,
         marca: "Nissan",
         modelo: "GTR Black Edition",
         ano: "2012",
@@ -714,6 +748,7 @@ const carros = [
         preco: "120.000",
     },
     {
+        id: 35,
         marca: "Chevrolet",
         modelo: "Corvette ZR1",
         ano: "2009",
@@ -735,6 +770,7 @@ const carros = [
         preco: "100.000",
     },
     {
+        id: 36,
         marca: "Viper",
         modelo: "SRT10 ACR-X",
         ano: "2010",
@@ -756,6 +792,7 @@ const carros = [
         preco: "100.000",
     },
     {
+        id: 37,
         marca: "Lamborghini",
         modelo: "Miura P400",
         ano: "1967",
@@ -777,6 +814,7 @@ const carros = [
         preco: "Lugares escondidos",
     },
     {
+        id: 38,
         marca: "Mitsubishi",
         modelo: "Lancer Evolution X GSR",
         ano: "2008",
@@ -798,6 +836,7 @@ const carros = [
         preco: "29.000",
     },
     {
+        id: 39,
         marca: "Honda",
         modelo: "NSX R-GT",
         ano: "2005",
@@ -819,6 +858,7 @@ const carros = [
         preco: "400.000"
     },
     {
+        id: 40,
         marca: "Lotus",
         modelo: "Exige Cup 240",
         ano: "2006",
@@ -840,6 +880,7 @@ const carros = [
         preco: "32.000"
     },
     {
+        id: 41,
         marca: "Chevrolet",
         modelo: "Camaro ZL1",
         ano: "2012",
@@ -861,6 +902,7 @@ const carros = [
         preco: "45.000"
     },
     {
+        id: 42,
         marca: "Dodge",
         modelo: "Challenger SRT8 392",
         ano: "2012",
@@ -882,6 +924,7 @@ const carros = [
         preco: "45.000"
     },
     {
+        id: 43,
         marca: "Ford",
         modelo: "Mustang Boss 429",
         ano: "1970",
@@ -903,6 +946,7 @@ const carros = [
         preco: "120.000"
     },
     {
+        id: 44,
         marca: "Peugeot",
         modelo: "205 Turbo 16",
         ano: "1984",
@@ -924,6 +968,7 @@ const carros = [
         preco: "120.000"
     },
     {
+        id: 45,
         marca: "Lancia",
         modelo: "Delta Integrale EVO",
         ano: "1992",
@@ -945,6 +990,7 @@ const carros = [
         preco: "22.000"
     },
     {
+        id: 46,
         marca: "Volkswagen",
         modelo: "Golf GTI 16v MK2",
         ano: "1992",
@@ -966,6 +1012,7 @@ const carros = [
         preco: "20.000"
     },
     {
+        id: 47,
         marca: "Mini",
         modelo: "Cooper S",
         ano: "1965",
@@ -990,6 +1037,7 @@ const carros = [
 
     },
     {
+        id: 48,
         marca: "Toyota",
         modelo: "Sprinter Trueno GT Apex",
         ano: "1985",
@@ -1011,6 +1059,7 @@ const carros = [
         preco: "6.000"
     },
     {
+        id: 49,
         marca: "Mazda",
         modelo: "MX-5 Miata",
         ano: "1994",
@@ -1032,6 +1081,7 @@ const carros = [
         preco: "7.000"
     },
     {
+        id: 50,
         marca: "Mercedes-Benz",
         modelo: "SL 65 AMG Black Series",
         ano: "2009",
@@ -1053,6 +1103,7 @@ const carros = [
         preco: "195.000"
     },
     {
+        id: 51,
         marca: "Jaguar",
         modelo: "E-Type S1",
         ano: "2016",
@@ -1074,6 +1125,7 @@ const carros = [
         preco: "150.000"
     },
     {
+        id: 52,
         marca: "Shelby",
         modelo: "Cobra Daytona Coupe",
         ano: "1964",
@@ -1095,6 +1147,7 @@ const carros = [
         preco: "500.000"
     },
     {
+        id: 53,
         marca: "Ferrari",
         modelo: "250 Testa Rossa",
         ano: "1957",
@@ -1116,6 +1169,7 @@ const carros = [
         preco: "1000.000"
     },
     {
+        id: 54,
         marca: "Lamborghini",
         modelo: "Diablo SV",
         ano: "1997",
@@ -1137,6 +1191,7 @@ const carros = [
         preco: "200.000"
     },
     {
+        id: 55,
         marca: "McLaren",
         modelo: "MP4-12C",
         ano: "2011",
@@ -1159,12 +1214,14 @@ const carros = [
     }
 ];
 
+let carroAtual = null;
+
 function exibirCarro(index) {
     const carro = carros[index];
-
+    carroAtual = carro;
     marcaCarro.innerHTML = `<img src="${carro.logo}" alt="">`;
     valorCR.innerHTML = carro.preco;
-   // config.onclick = () => window.location = carro.linkConfig;
+    // config.onclick = () => window.location = carro.linkConfig;
 
     nomeMarca.innerHTML = carro.marca;
     nomeModelo.innerHTML = carro.modelo;
@@ -1208,3 +1265,12 @@ nivelPorcentagemArrancagem.style.width = "112.5px"
 
 
 nivelPorcentagemFrenagem.style.width = "142.5px"
+
+function favoritarCarroAtual() {
+    if (carroAtual) {
+        sessionStorage.setItem("carroSelecionado", JSON.stringify(carroAtual));
+        window.location.href = "favoritos.html";
+    } else {
+        alert("Nenhum carro selecionado.");
+    }
+}

@@ -12,7 +12,7 @@ function login(event) {
  }
 
     if (emailVar == "" || senhaVar == "") {
-        div_mensagem.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+        div_mensagem.innerHTML = `<p>(Campos preenchidos de maneira incorreta)</p>`;
         return false;
     }
     else {
@@ -42,7 +42,7 @@ function login(event) {
                 console.log(JSON.stringify(json));
                 sessionStorage.EMAIL_USUARIO = json.email;
                 sessionStorage.NOME_USUARIO = json.nome;
-                sessionStorage.ID_USUARIO = json.id;
+                sessionStorage.ID_USUARIO = json.idCadastro;
 
                 setTimeout(function () {
                     window.location = "aposLogin.html";
@@ -53,12 +53,12 @@ function login(event) {
         } else {
             while ((!resposta.ok) && tentativas < 3) {
                 tentativas++;
-                div_mensagem.innerHTML = `Credenciais incorretas. Tente novamente. Tentativa: ${tentativas}`;
+                div_mensagem.innerHTML = `<p>Credenciais incorretas. Tentativa: ${tentativas}</p>`;
                 break;
             }
            
             if (tentativas >= 3) {
-                div_mensagem.innerHTML = 'Máximo de 3 tentativas atingido. Tente novamente mais tarde.';
+                div_mensagem.innerHTML = `<p>Máximo de 3 tentativas atingido. Tente novamente mais tarde.</p>`;
                desativarBotao()
 
             }

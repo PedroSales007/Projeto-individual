@@ -132,6 +132,9 @@
 </html>
 
 <script>
+    window.onload = () =>{
+        usuarioNome.innerHTML = sessionStorage.NOME_USUARIO
+    }
     function option(){
     var optPerfil = document.getElementById('optPerfil')
     var opt = document.getElementById('opt')
