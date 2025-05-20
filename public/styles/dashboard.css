@@ -1,29 +1,88 @@
-body {
-    background-color: #0a0a0a;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #00aaff;
-  }
-  .dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .chart-card {
-    background: #1a1a1a;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
-  }
-  canvas {
-    width: 100% ;
-    height: auto;
-  }
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        html,
+        body {
+          height: 100vh;
+          background-color: #121212;
+          color: white;
+          font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .kpis {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 0.4rem;
+          height: 90px;
+          width: 20%;
+        }
+
+        .card {
+          background-color: #1f1f1f;
+          padding: 0.6rem;
+          border-left: 4px solid #3498db;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .home-btn {
+          background-color: #333;
+          border-left: 4px solid #34dbdb;
+
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .home-btn:hover {
+          background-color: #444;
+        }
+
+        .card h2 {
+          font-size: 1.1rem;
+          margin-bottom: 0.2rem;
+          color: #00e6e6;
+        }
+
+        .card p {
+          font-size: 0.7rem;
+          color: #aaa;
+        }
+
+        .charts {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 0.4rem;
+          height: 100vh;
+          width: 80%;
+          position: absolute;
+          right: 0;
+          padding: 5px;
+
+        }
+
+        .chart-container {
+          background-color: #1a1a1a;
+          border-radius: 8px;
+          height: 48vh;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }

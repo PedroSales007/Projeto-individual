@@ -1,119 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/dashboard.css">
-  <title>Dashboard Forza Horizon 1</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Horizon Garage </title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
 </head>
+
 <body>
 
-  
-    <h1>🏎️ Dashboard de Performance</h1>
-  
-    <div class="dashboard">
-      <div class="chart-card">
-        <h2>Tipos de Motor e Potência</h2>
-        <canvas id="motorPowerChart"></canvas>
-      </div>
-  
-      <div class="chart-card">
-        <h2>Terreno Ideal do Carro</h2>
-        <canvas id="terrainChart"></canvas>
-      </div>
-      
-      <div class="chart-card">
-        <h2>Perfil de Estilo</h2>
-        <canvas id="radarChart"></canvas>
-      </div>
-  
-      <div class="chart-card">
-        <h2>Tempo Médio de Customização</h2>
-        <canvas id="timeChart"></canvas>
-      </div>
+    <!-- KPIs -->
+    <div class="kpis">
+        <div class="card home-btn" onclick="sair()">
+            <h2>Home</h2>
+        </div>
+        <div class="card">
+            <h2>6.2s</h2>
+            <p>Aceleração (0–100 km/h)</p>
+        </div>
+        <div class="card">
+            <h2>450 Nm</h2>
+            <p>Torque</p>
+        </div>
+        <div class="card">
+            <h2>V8 Turbo</h2>
+            <p>Motor</p>
+        </div>
+        <div class="card">
+            <h2>520 HP</h2>
+            <p>Potência</p>
+        </div>
+        <div class="card">
+            <h2>9.2 km/L</h2>
+            <p>Consumo</p>
+        </div>
+        <div class="card">
+            <h2>93 ºC</h2>
+            <p>Temperatura</p>
+        </div>
+        <div class="card">
+            <h2>1800 kg</h2>
+            <p>Peso</p>
+        </div>
+        <div class="card">
+            <h2>350 KM/h</h2>
+            <p>Velocidade Máxima</p>
+        </div>
     </div>
-  
+
+    <!-- GRÁFICOS -->
+    <div class="charts">
+        <div class="chart-container">
+            <canvas id="chart1"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart2"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart3"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart4"></canvas>
+        </div>
+    </div>
+
     <script>
-      // Gráfico de Barra (Motor + Potência)
-      new Chart(document.getElementById('motorPowerChart'), {
-        type: 'bar',
-        data: {
-          labels: ['V6 - 320 HP', 'V8 - 450 HP', 'Elétrico - 350 HP', 'Turbo - 400 HP'],
-          datasets: [{
-            label: 'Potência Média (HP)',
-            data: [320, 450, 350, 400],
-            backgroundColor: ['#0077ff', '#00ccff', '#00ffaa', '#ffaa00'],
-            borderColor: '#0a0a0a',
-            borderWidth: 2
-          }]
-        },
-        options: {
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.raw} HP` } } },
-          scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' }, beginAtZero: true } }
-        }
-      });
-  
-      // Gráfico de Barras (Terreno Ideal)
-      new Chart(document.getElementById('terrainChart'), {
-        type: 'bar',
-        data: {
-          labels: ['Estrada', 'Terra', 'Drift', 'Rally'],
-          datasets: [{
-            label: 'Performance Ideal (%)',
-            data: [85, 60, 90, 70],
-            backgroundColor: ['#00ffaa', '#ffaa00', '#ff0077', '#00ccff'],
-            borderColor: '#0a0a0a',
-            borderWidth: 2
-          }]
-        },
-        options: {
-          indexAxis: 'y',
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.raw}%` } } },
-          scales: { x: { ticks: { color: 'white', callback: value => `${value}%` }, beginAtZero: true }, y: { ticks: { color: 'white' } } }
-        }
-      });
-  
-      // Radar Chart (Perfil de Estilo)
-      new Chart(document.getElementById('radarChart'), {
-        type: 'radar',
-        data: {
-          labels: ['Performance', 'Design', 'Originalidade', 'Realismo'],
-          datasets: [{
-            label: 'Perfil do Jogador',
-            data: [85, 70, 90, 60],
-            backgroundColor: 'rgba(0, 170, 255, 0.3)',
-            borderColor: '#00aaff',
-            pointBackgroundColor: '#00ffaa'
-          }]
-        },
-        options: {
-          scales: { r: { pointLabels: { color: 'white' }, grid: { color: '#444' }, angleLines: { color: '#444' } } },
-          plugins: { legend: { labels: { color: 'white' } } }
-        }
-      });
-  
-      // Gráfico de Linha (Tempo de Customização)
-      new Chart(document.getElementById('timeChart'), {
-        type: 'line',
-        data: {
-          labels: ['Pintura', 'Motor', 'Aerodinâmica', 'Ajustes Finais'],
-          datasets: [{
-            label: 'Tempo Médio (min)',
-            data: [5, 8, 6, 4],
-            backgroundColor: 'rgba(0, 170, 255, 0.2)',
-            borderColor: '#00ffaa',
-            pointBackgroundColor: '#00ffaa',
-            fill: true,
-            tension: 0.4
-          }]
-        },
-        options: {
-          plugins: { legend: { labels: { color: 'white' } } },
-          scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } }
-        }
-      });
+        // Gráfico 1
+        new Chart(document.getElementById('chart1'), {
+            type: 'bar',
+            data: {
+                labels: ['1ª', '2ª', '3ª', '4ª', '5ª'],
+                datasets: [{
+                    label: 'Velocidade por marcha',
+                    backgroundColor: '#00e6e6',
+                    data: [30, 55, 85, 120, 160]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Gráfico 2
+        new Chart(document.getElementById('chart2'), {
+            type: 'line',
+            data: {
+                labels: ['1km', '2km', '3km', '4km', '5km'],
+                datasets: [{
+                    label: 'Consumo médio de combustivel em uma corrida',
+                    borderColor: '#e67e22',
+                    data: [2, 1.5, 2.8, 1.5, 3.2],
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Gráfico 3
+        new Chart(document.getElementById('chart3'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Temperatura', 'Limite'],
+                datasets: [{
+                    data: [93, 47], // 93ºC de 140ºC
+                    backgroundColor: ['#e74c3c', '#333'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                rotation: -90,
+                circumference: 180,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return context.label + ': ' + context.parsed + ' ºC';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+
+        // Gráfico 4 
+new Chart(document.getElementById('chart4'), {
+    type: 'radar',
+    data: {
+        labels: ['Velocidade', 'Controle', 'Aceleração', 'Arrancada', 'Frenagem'],
+        datasets: [{
+            label: 'Desempenho Geral',
+            backgroundColor: 'rgba(46, 204, 113, 0.2)',
+            borderColor: '#2ecc71',
+            pointBackgroundColor: '#2ecc71',
+            data: [90, 75, 85, 80, 70] // <- Altere aqui os valores conforme seu contexto
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
     </script>
-  
-  </body>
-  </html>
+
+</body>
+
+</html>
+<script>
+    function sair(){
+        window.location = 'aposlogin.html'
+    }
+</script>

@@ -40,7 +40,6 @@ const carros = [
             frenagem: 9.2
         },
         preco: "8000.000",
-        linkConfig: "screens/dashboard.html"
     },
     {
         marca: "Ferrari",
@@ -1165,7 +1164,7 @@ function exibirCarro(index) {
 
     marcaCarro.innerHTML = `<img src="${carro.logo}" alt="">`;
     valorCR.innerHTML = carro.preco;
-    config.onclick = () => window.location = carro.linkConfig;
+   // config.onclick = () => window.location = carro.linkConfig;
 
     nomeMarca.innerHTML = carro.marca;
     nomeModelo.innerHTML = carro.modelo;
@@ -1196,36 +1195,16 @@ function exibirCarro(index) {
 
 
 
-marcaCarro.innerHTML = `<img src="imagens/viper/logo-viper.png" alt="">`
-valorCR.innerHTML = "110.000"
-config.innerHTML = 'Favoritos'
-function favoritos() {
-
-}
-
-nomeMarca.innerHTML = "Viper"
-nomeModelo.innerHTML = "GTS"
-modeloAno.innerHTML = "2013"
-classe.innerHTML = "SUPER CARS"
-
-imgCarro.innerHTML = `<img src="imagens/viper/viper-gts.png" alt="">`
-
-nivel.innerHTML = `<img src="imagens/classe-tracao/niveis/r3-800.png" alt="">`
-
-legendaTracao.innerHTML = "RWD"
-imgTracao.innerHTML = `<img src="imagens/classe-tracao/tracao-trazeira.png" alt="">`
-
-velocidade.innerHTML = "9"
 nivelPorcentagemVelocidade.style.width = "135px"
 
-controle.innerHTML = "9.6"
+
 nivelPorcentagemControle.style.width = "144px"
 
-aceleracao.innerHTML = "8.4"
+
 nivelPorcentagemAceleracao.style.width = "126px"
 
-arrancada.innerHTML = "7.5"
+
 nivelPorcentagemArrancagem.style.width = "112.5px"
 
-frenagem.innerHTML = "9.5"
+
 nivelPorcentagemFrenagem.style.width = "142.5px"

@@ -1,0 +1,20 @@
+.plus{
+    width: 38%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus div{
+    background-color: aliceblue;
+    width: 4px;
+    height: 50%;
+}
+.plus div:nth-child(2){
+     transform: rotate(90deg);
+     margin-left: -5px;
+}
+
