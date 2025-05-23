@@ -1221,7 +1221,6 @@ function exibirCarro(index) {
     carroAtual = carro;
     marcaCarro.innerHTML = `<img src="${carro.logo}" alt="">`;
     valorCR.innerHTML = carro.preco;
-    // config.onclick = () => window.location = carro.linkConfig;
 
     nomeMarca.innerHTML = carro.marca;
     nomeModelo.innerHTML = carro.modelo;
@@ -1268,8 +1267,19 @@ nivelPorcentagemFrenagem.style.width = "142.5px"
 
 function favoritarCarroAtual() {
     if (carroAtual) {
-        sessionStorage.setItem("carroSelecionado", JSON.stringify(carroAtual));
-        window.location.href = "favoritos.html";
+        let favorito = JSON.parse(sessionStorage.getItem('favorito')) || [];
+
+        let existe = favorito.some(rep => rep.id === carroAtual.id);
+        if (!existe) {
+            favorito.push(carroAtual);
+            sessionStorage.setItem("favorito", JSON.stringify(favorito));
+            window.location.href = "favoritos.html";
+        }
+        else{
+        alert("Esse carro já existe na lista de Favoritos.");
+
+        }
+
     } else {
         alert("Nenhum carro selecionado.");
     }

@@ -96,6 +96,16 @@ main .container .marcadores .valorCR, .config{
     font-size: 20px;
 }
 
+main .container .marcadores .config{
+    background: transparent;
+    border: none;
+    transition: 0.3s;
+}
+main .container .marcadores .config:hover{
+    background: rgba(204, 221, 204, 0.329);
+    transition: 0.3s;
+
+}
 main .container .containerCarro {
     width: 60%;
     height: 100%;
@@ -256,21 +266,21 @@ main .carrossel {
 }
 
 main .carrossel .change {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 113px;
-    background-color: #ccc;
-    transition: all 0.3s ease;
+    flex: 0 0 auto !important;
+    display: flex  !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 250px !important;
+    height: 113px !important;
+    background-color: #ccc !important;
+    transition: all 0.3s ease !important;
 }
 
 main .carrossel .change img {
-    width: 150px;
+    width: 150px !important;
 }
 
 main .carrossel .change:hover {
-    transform: scale(1.1);
-    border-bottom: 5px solid #F26536;
+    transform: scale(1.1) !important;
+    border-bottom: 5px solid #F26536 !important;
 }
