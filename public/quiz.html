@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="stylesheet" href="styles/geral.css">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Horizon tuner</title>
+</head>
+
+<body>
+
+    <button onclick="home()" class="voltar"><img src="imagens/body/home.png" alt="home" width="35px"></button>
+
+    <div class="quiz-container">
+    <h1>Quiz Forza Horizon 1</h1>
+    <div class="timer" id="timer" style="text-align: center;">Tempo: 30s</div>
+    <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <div class="buttons">
+            <button onclick="prevQuestion()" id="prevBtn" style="display: none;">Voltar</button>
+            <button onclick="nextQuestion()" id="nextBtn">Próximo</button>
+        </div>
+    </div>
+    <div id="result" style="display: none;"></div>
+</div>
+
+<script src="javaScript/qiz.js"></script>
+
+</body>
+</html>

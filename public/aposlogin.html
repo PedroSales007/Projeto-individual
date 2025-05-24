@@ -14,10 +14,11 @@
 <body>
     <nav style="justify-content: space-between; padding: 0 50px;">
         <picture>
-            <a href="index.html">Horizon Tuner</a>
+            <a href="aposlogin.html">Horizon Tuner</a>
         </picture>
 
         <ul>
+            <li><a href="quiz.html">Quiz</a></li>
             <li><a href="garagemGeral.html">Garagem</a></li>
             <li><a href="garagem-escolherCarro.html">Principais</a></li>
             <li><a href="favoritos.html">Favoritos</a></li>
@@ -135,6 +136,8 @@
     window.onload = () =>{
         usuarioNome.innerHTML = sessionStorage.NOME_USUARIO
     }
+
+
     function option(){
     var optPerfil = document.getElementById('optPerfil')
     var opt = document.getElementById('opt')

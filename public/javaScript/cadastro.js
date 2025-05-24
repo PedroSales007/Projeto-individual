@@ -36,7 +36,7 @@ function cadastrar(event) {
 
                 if (resposta.ok) {
 
-                    div_mensagem.innerHTML = `<p>Senha Incorreta</p>`;
+                    div_mensagem.innerHTML = `<p>Cadastro Realizado</p>`;
 
                     setTimeout(() => {
                         window.location = "login.html";

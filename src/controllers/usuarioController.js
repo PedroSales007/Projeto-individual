@@ -1,5 +1,4 @@
 var usuarioModel = require("../models/usuarioModel");
-var provadorModel = require("../models/provadorModel");
 
 function autenticar(req, res) {
     var email = req.body.emailServer;

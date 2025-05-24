@@ -10,7 +10,38 @@ senha varchar(50)
 
 select * from cadastro;
 
-Create table tracao(
+create table quiz(
+idQuiz int primary key auto_increment,
+tentativas int
+);
+
+create table partida(
+idPartida int auto_increment,
+idUsuario int,
+idQuiz int,
+constraint triplaKey primary key(idPartida, idUsuario, idQuiz),
+constraint fkUsuarioPartida foreign key(idUsuario) references cadastro(idCadastro),
+constraint fkQuizPartida foreign key(idQuiz) references quiz(idQuiz),
+tempo int,
+pontuacao int
+);
+
+select * from partida;
+
+
+/*insert into quiz(pergunta, resposta) values
+	('Qual é o nome oficial do festival onde o jogo Forza Horizon 1 se passa?','Horizon Festival'),
+    ('Qual carro é utilizado na corrida de introdução (prólogo) do Forza Horizon 1?','Lamborghini Gallardo LP570-4 Superleggera'),
+    ('Qual destes fabricantes NÃO aparece com modelos jogáveis no Forza Horizon 1 base (sem DLC)?','Toyota'),
+    ('Em Forza Horizon 1, quantos níveis de pulseira (bracelet) existem que determinam o progresso do jogador?','6'),
+    ('Qual a cidade fictícia central do mapa de Forza Horizon 1?','Redrock'),
+    ('Qual é o nome do personagem que serve como principal rival do jogador durante a maior parte do jogo?','Darius Flynt'),
+    ('Em Forza Horizon 1, qual destes eventos é obrigatório para a progressão principal?','Showcase Events'),
+    ('Quantos carros secretos (Barn Finds) podem ser descobertos em Forza Horizon 1?','9'),
+    ('Qual desses carros foi incluído como parte do \"October Car Pack\" DLC para Forza Horizon 1?','2012 Aston Martin Vanquish'),
+    ('Qual destas bandas NÃO faz parte da trilha sonora oficial do Forza Horizon 1?','Imagine Dragons');
+*/
+/* Create table tracao(
 idTracao INT PRIMARY KEY AUTO_INCREMENT,
 tipo CHAR(3),
 imgTracao VARCHAR(150)
@@ -174,6 +205,6 @@ constraint pktripla primary key(idFavorito, fkUsuario, fkVeiculo),
 constraint fkFavoritoUsuario foreign key(fkUsuario) references cadastro(idCadastro),
 constraint fkFavoritoVeiculo foreign key(fkVeiculo) references veiculo(idVeiculo)
 );
-
+*/
 
 

@@ -30,7 +30,6 @@ main .historia {
     scroll-behavior: smooth;
     padding: 0 80px 30px 80px;
     color: var(--preto);
-    position: relative;
 }
 
 main .historia .corpoTexto {

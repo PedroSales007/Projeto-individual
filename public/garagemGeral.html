@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="paiTransicao"></div>
     <button onclick="voltar()" class="voltar">
         <img src="imagens/body/seta-saida.png" alt="" width="30px">
     </button>
@@ -175,9 +176,39 @@
 
 </html>
 <script>
-    function voltar() {
-        window.location = "aposLogin.html"
+    var paiTransicao = document.querySelector('.paiTransicao');
+    paiTransicao.classList.add('fade-in');
+
+    paiTransicao.addEventListener('animationend', () => {
+        paiTransicao.style.display = 'none';
+    });
+
+    function favoritarCarroAtual() {
+        paiTransicao.style.display = 'block';
+        paiTransicao.addEventListener('animationend', () => {
+            window.location = 'aposLogin.html';
+        });
+        paiTransicao.classList.remove('fade-in');
+        paiTransicao.classList.add('fade-out');
     }
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.paiTransicao')
+        setTimeout('DOMContentLoaded', 10000);
+    });
+
+    function voltar() {
+        paiTransicao.style.display = 'block';
+        paiTransicao.addEventListener('animationend', () => {
+            window.location = 'aposLogin.html';
+        });
+        paiTransicao.classList.remove('fade-in');
+        paiTransicao.classList.add('fade-out');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.paiTransicao')
+        setTimeout('DOMContentLoaded', 10000);
+    });
+
 </script>
 
 <script src="javaScript/garagemEscolhaCarro.js"></script>

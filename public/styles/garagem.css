@@ -5,11 +5,50 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image:url("../imagens/body/background-garagem.jpg");
+    background-image: url("../imagens/body/background-garagem.jpg");
     background-size: cover;
     backdrop-filter: blur(5px);
+    transition:  3s ease-in-out;
+
 }
-.voltar{
+
+.paiTransicao{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition:  3s ease-in-out;
+
+}
+
+@keyframes fade-in {
+    from {  
+        background: #000;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes fade-out {
+    from {  
+        background: transparent;
+    }
+
+    to {
+        background-color: #000;
+    }
+}
+
+.fade-out {
+    animation: fade-out 2s ease-in-out forwards;
+}
+.fade-in {
+    animation: fade-in 2s ease-in-out forwards;
+}
+
+
+.voltar {
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -24,10 +63,11 @@ body {
     justify-content: center;
 }
 
-.voltar:hover{
+.voltar:hover {
     background-color: #e67e22;
-    
+
 }
+
 main {
     width: 80vw;
     height: 90vh;
@@ -61,7 +101,7 @@ main .container .marcadores {
     background: #5e5e5ebb;
 }
 
-main .container .marcadores .marca{
+main .container .marcadores .marca {
     width: 100%;
     height: 200px;
     display: flex;
@@ -69,23 +109,24 @@ main .container .marcadores .marca{
     align-items: center;
 }
 
-main .container .marcadores .marca picture{
+main .container .marcadores .marca picture {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .container .marcadores .marca picture img{
+main .container .marcadores .marca picture img {
     width: 100px;
 }
 
-main .container .marcadores .valorCR{
+main .container .marcadores .valorCR {
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
 }
 
-main .container .marcadores .valorCR, .config{
+main .container .marcadores .valorCR,
+.config {
     width: 100%;
     height: 80px;
     display: flex;
@@ -96,16 +137,18 @@ main .container .marcadores .valorCR, .config{
     font-size: 20px;
 }
 
-main .container .marcadores .config{
+main .container .marcadores .config {
     background: transparent;
     border: none;
     transition: 0.3s;
 }
-main .container .marcadores .config:hover{
+
+main .container .marcadores .config:hover {
     background: rgba(204, 221, 204, 0.329);
     transition: 0.3s;
 
 }
+
 main .container .containerCarro {
     width: 60%;
     height: 100%;
@@ -156,7 +199,7 @@ main .container .containerCarro .imgCarro img {
     justify-content: center;
     align-items: center;
     width: 600px;
-    
+
 }
 
 main .container .segmentosGeral {
@@ -165,33 +208,33 @@ main .container .segmentosGeral {
     background: #5e5e5ebb;
 }
 
-main .container .segmentosGeral .classe-tracao{
+main .container .segmentosGeral .classe-tracao {
     display: flex;
     width: 100%;
     height: 100px;
-    border-bottom:1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
-main .container .segmentosGeral .classe-tracao .nivel{
+main .container .segmentosGeral .classe-tracao .nivel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    border-right:1px solid #000;
+    border-right: 1px solid #000;
 }
 
-main .container .segmentosGeral .classe-tracao .nivel img{
+main .container .segmentosGeral .classe-tracao .nivel img {
     width: 50%;
 }
 
-main .container .segmentosGeral .classe-tracao .tracao{
+main .container .segmentosGeral .classe-tracao .tracao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
     color: var(--branco);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 main .container .segmentosGeral .segmentos {
@@ -202,7 +245,7 @@ main .container .segmentosGeral .segmentos {
     justify-content: space-evenly;
     align-items: center;
     color: var(--branco);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 main .container .segmentosGeral .segmentos .seg-conjunto {
@@ -214,17 +257,22 @@ main .container .segmentosGeral .segmentos .seg-conjunto {
     justify-content: space-between;
     align-items: center;
     color: var(--branco);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem{
-    width: 150px; 
+main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem {
+    width: 150px;
     height: 8px;
     border-radius: 5px;
     background: #000;
 }
-main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem #nivelPorcentagemVelocidade, #nivelPorcentagemControle, #nivelPorcentagemAceleracao, #nivelPorcentagemArrancagem, #nivelPorcentagemFrenagem{
-    width: 100px; 
+
+main .container .segmentosGeral .segmentos .seg-conjunto .velocidade .marcadorPorcentagem #nivelPorcentagemVelocidade,
+#nivelPorcentagemControle,
+#nivelPorcentagemAceleracao,
+#nivelPorcentagemArrancagem,
+#nivelPorcentagemFrenagem {
+    width: 100px;
     height: 8px;
     border-radius: 5px;
     background: #ffffff;
@@ -267,7 +315,7 @@ main .carrossel {
 
 main .carrossel .change {
     flex: 0 0 auto !important;
-    display: flex  !important;
+    display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 250px !important;
