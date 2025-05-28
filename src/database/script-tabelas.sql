@@ -14,6 +14,9 @@ create table quiz(
 idQuiz int primary key auto_increment,
 tentativas int
 );
+INSERT INTO quiz (tentativas) VALUES (0);
+
+select * from quiz;
 
 create table partida(
 idPartida int auto_increment,
@@ -63,62 +66,89 @@ frenagem DECIMAL(3,1)
 );
 
 INSERT INTO sistemaDinamico (velocidade, controle, aceleracao, arrancada, frenagem) VALUES
-(6.2, 5.4, 5.9, 7.0, 5.5), -- BMW M3-GTR
-(6.3, 5.3, 5.7, 6.6, 5.1), -- Nissan Silvia Spec-R
-(6.9, 5.6, 6.3, 8.0, 5.7), -- Lancer Evo X
-(6.9, 5.6, 6.1, 7.5, 5.6), -- Subaru WRX STi
-(6.7, 5.4, 6.0, 7.2, 5.2), -- Toyota Supra RZ
-(6.0, 5.2, 5.5, 6.3, 5.0), -- Mazda RX-7
-(3.2, 8.0, 4.8, 5.2, 7.7), -- Volkswagen Golf GTI MK2
-(3.0, 7.6, 5.0, 5.2, 7.3), -- Mini Cooper S
-(3.5, 7.9, 5.9, 6.0, 7.7), -- Toyota Sprinter Trueno
-(3.1, 8.3, 4.9, 5.2, 8.1), -- Mazda MX-5 Miata
-(8.6, 8.5, 7.8, 8.1, 6.6),  -- Mercedes SL 65 AMG
-(6.7, 8.0, 8.5, 8.0, 8.4),  -- Chevrolet Camaro ZL1
-(7.0, 8.0, 7.3, 8.0, 7.3),  -- Dodge Challenger SRT8 392
-(4.7, 6.5, 4.9, 6.2, 6.5),  -- Ford Mustang Boss 429
-(4.0, 6.0, 5.9, 7.9, 6.0),  -- Peugeot 205 Turbo 16
-(3.9, 7.8, 6.3, 7.2, 7.4),  -- Lancia Delta Integrale EVO
-(8.9, 10.0, 9.0, 8.2, 10.0), -- Viper SRT10 ACR-X
-(5.8, 7.6, 7.1, 6.2, 6.7), -- Lamborghini Miura P400
-(5.4, 8.3, 6.7, 7.7, 8.2), -- Mitsubishi Lancer Evolution X GSR
-(6.5, 9.2, 7.4, 7.7, 9.1), -- Honda NSX R-GT
-(5.1, 9.4, 8.1, 9.3, 8.1), -- Lotus Exige Cup 240
-(9.8, 9.1, 8.5, 7.4, 9.0), -- Aston Martin ONE-77
-(8.3, 8.9, 8.9, 9.5, 9.0), -- Audi R8 GT COUPE
-(7.4, 8.6, 7.8, 6.8, 8.5), -- BMW M3 GTR
-(9.1, 8.7, 8.4, 9.4, 8.7), -- Nissan GTR Black Edition
-(9.4, 9.0, 8.4, 7.2, 9.0), -- Corvette ZR1
-(6.6, 8.1, 7.0, 5.3, 7.3),  -- Ferrari 250 GTO
-(10.0, 9.5, 8.8, 7.5, 9.3), -- Pagani Huayra
-(10.0, 9.4, 9.1, 8.1, 9.5), -- Hennessey Venom GT
-(9.6, 9.7, 8.9, 7.9, 9.6),  -- Enzo Ferrari
-(9.1, 8.8, 8.5, 7.5, 8.8),  -- Mercedes SLS AMG
-(7.9, 8.6, 7.8, 7.0, 8.4), -- Alfa Romeu 8C Competizione
-(9.0, 9.2, 8.6, 7.6, 9.1), -- Alfa Romeu TZ3 Stradale Zagato
-(8.8, 9.3, 8.2, 7.4, 9.0), -- Ascari KZ1R
-(4.9, 7.3, 6.3, 5.9, 6.4), -- Aston Martin DB5 Vantage
-(8.4, 8.6, 7.6, 6.7, 8.5), -- Aston Martin DB5
-(5.7, 5.9, 7.6, 6.1, 7.1),  -- Shelby Cobra
-(5.2, 8.6, 6.6, 7.5, 8.5),  -- Impreza 22B STi
-(7.1, 8.2, 6.7, 6.5, 7.7),  -- Mazda RX-7
-(10.0, 9.3, 8.8, 8.1, 9.1), -- McLaren F1
-(3.8, 8.1, 5.7, 5.7, 7.9),  -- Abarth 500
-(6.1, 8.5, 6.8, 7.4, 8.3), -- (Nissan Skyline GTR-R)
-(6.8, 8.3, 6.8, 6.6, 8.0), -- (Toyota Supra RZ)
-(4.0, 7.0, 6.5, 5.0, 6.1), -- (Camaro SS)
-(4.3, 6.9, 6.5, 5.4, 6.1), -- (Dodge Charger R/T-SE)
-(7.6, 8.3, 7.7, 6.5, 8.2), -- (Mustang Boss 302)
-(8.1, 9.1, 9.4, 8.9, 10.0), -- Pagani Zonda R
-(10.0, 9.5, 8.9, 7.8, 9.4), -- Koenigsegg Agera
-(8.9, 8.9, 8.1, 6.9, 8.7),  -- Ford GT
-(5.4, 8.1, 6.7, 7.8, 7.9),  -- Audi Sport Quattro
-(4.3, 8.0, 6.5, 6.8, 7.4),  -- Lancia Stratos HF Stradale
-(9.0, 9.6, 8.4, 7.5, 9.5),  -- Viper GTS
-(8.0, 9.4, 8.3, 7.8, 9.2),  -- Ferrari F40
-(8.0, 7.4, 8.9, 8.6, 9.0),  -- Ferrari 458 Italia
-(10.0, 9.4, 10.0, 9.8, 9.4),-- Bugatti Veyron
-(10.0, 9.1, 9.1, 8.5, 8.9); -- Lamborghini Aventador
+BMW M3-GTR
+Nissan Silvia Spec-R
+Lancer Evo X
+Subaru WRX STi
+Toyota Supra RZ
+Mazda RX-7
+Volkswagen Golf GTI MK2
+Mini Cooper S
+Toyota Sprinter Trueno
+Mazda MX-5 Miata
+
+Mercedes SL 65 AMG
+
+Chevrolet Camaro ZL1
+
+Dodge Challenger SRT8 392
+
+Ford Mustang Boss 429
+
+Peugeot 205 Turbo 16
+
+Lancia Delta Integrale EVO
+
+Viper SRT10 ACR-X
+Lamborghini Miura P400
+Mitsubishi Lancer Evolution X GSR
+Honda NSX R-GT
+Lotus Exige Cup 240
+Aston Martin ONE-77
+Audi R8 GT COUPE
+BMW M3 GTR
+Nissan GTR Black Edition
+Corvette ZR1
+
+Ferrari 250 GTO
+
+Pagani Huayra
+
+Hennessey Venom GT
+
+Enzo Ferrari
+
+Mercedes SLS AMG
+Alfa Romeu 8C Competizione
+Alfa Romeu TZ3 Stradale Zagato
+Ascari KZ1R
+Aston Martin DB5 Vantage
+Aston Martin DB5
+
+Shelby Cobra
+
+Impreza 22B STi
+
+Mazda RX-7
+
+McLaren F1
+
+Abarth 500
+(Nissan Skyline GTR-R)
+(Toyota Supra RZ)
+(Camaro SS)
+(Dodge Charger R/T-SE)
+(Mustang Boss 302)
+
+Pagani Zonda R
+
+Koenigsegg Agera
+
+Ford GT
+
+Audi Sport Quattro
+
+Lancia Stratos HF Stradale
+
+Viper GTS
+
+Ferrari F40
+
+Ferrari 458 Italia
+
+Bugatti Veyron
+
+Lamborghini Aventador
 
 
 create table veiculo(
