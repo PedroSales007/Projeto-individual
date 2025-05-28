@@ -18,35 +18,35 @@
             <h2>Home</h2>
         </div>
         <div class="card">
-            <h2>6.2s</h2>
+            <h2><span id="aceleracao"></span>s</h2>
             <p>Aceleração (0–100 km/h)</p>
         </div>
         <div class="card">
-            <h2>450 Nm</h2>
+            <h2><span id="torque"></span> Nm</h2>
             <p>Torque</p>
         </div>
         <div class="card">
-            <h2>V8 Turbo</h2>
+            <h2 id="motor"></h2>
             <p>Motor</p>
         </div>
         <div class="card">
-            <h2>520 HP</h2>
+            <h2><span id="potencia"></span></h2>
             <p>Potência</p>
         </div>
         <div class="card">
-            <h2>9.2 km/L</h2>
+            <h2><span id="consumo"></span> km/L</h2>
             <p>Consumo</p>
         </div>
         <div class="card">
-            <h2>93 ºC</h2>
+            <h2><span id="temperatura"></span> ºC</h2>
             <p>Temperatura</p>
         </div>
         <div class="card">
-            <h2>1800 kg</h2>
+            <h2 id="peso"></h2>
             <p>Peso</p>
         </div>
         <div class="card">
-            <h2>350 KM/h</h2>
+            <h2><span id="velocidadeMaxima">350</span> KM/h</h2>
             <p>Velocidade Máxima</p>
         </div>
     </div>
@@ -67,106 +67,7 @@
         </div>
     </div>
 
-    <script>
-        // Gráfico 1
-        new Chart(document.getElementById('chart1'), {
-            type: 'bar',
-            data: {
-                labels: ['1ª', '2ª', '3ª', '4ª', '5ª'],
-                datasets: [{
-                    label: 'Velocidade por marcha',
-                    backgroundColor: '#00e6e6',
-                    data: [30, 55, 85, 120, 160]
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false
-            }
-        });
-
-        // Gráfico 2
-        new Chart(document.getElementById('chart2'), {
-            type: 'line',
-            data: {
-                labels: ['1km', '2km', '3km', '4km', '5km'],
-                datasets: [{
-                    label: 'Consumo médio de combustivel em uma corrida',
-                    borderColor: '#e67e22',
-                    data: [2, 1.5, 2.8, 1.5, 3.2],
-                    fill: false
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false
-            }
-        });
-
-        // Gráfico 3
-        new Chart(document.getElementById('chart3'), {
-            type: 'doughnut',
-            data: {
-                labels: ['Temperatura', 'Limite'],
-                datasets: [{
-                    data: [93, 47], // 93ºC de 140ºC
-                    backgroundColor: ['#e74c3c', '#333'],
-                    borderWidth: 0
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                rotation: -90,
-                circumference: 180,
-                plugins: {
-                    legend: { display: true },
-                    tooltip: {
-                        callbacks: {
-                            label: function (context) {
-                                return context.label + ': ' + context.parsed + ' ºC';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-
-
-        // Gráfico 4 
-        new Chart(document.getElementById('chart4'), {
-            type: 'radar',
-            data: {
-                labels: ['Velocidade', 'Controle', 'Aceleração', 'Arrancada', 'Frenagem'],
-                datasets: [{
-                    label: 'Desempenho Geral',
-                    backgroundColor: 'rgba(46, 204, 113, 0.2)',
-                    borderColor: '#2ecc71',
-                    pointBackgroundColor: '#2ecc71',
-                    data: [10, 10, 10, 10, 10] // <- Altere aqui os valores conforme seu contexto
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false
-            }
-        });
-
-    </script>
-
 </body>
 
 </html>
-<script>
-    function sair() {
-        window.location = 'aposlogin.html'
-    }
-    const fichaSelecionada = JSON.parse(sessionStorage.getItem("ficha"));
-
-    if (fichaSelecionada) {
-        console.log(fichaSelecionada);
-        // Aqui você exibe os dados da ficha na tela
-    } else {
-        console.log("Nenhuma ficha técnica encontrada.");
-    }
-</script>
+<script src="javaScript/dash_fichaTecnica.js"></script>
