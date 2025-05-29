@@ -37,12 +37,15 @@ select c.nome as usuario,
 		on p.fkQuiz = q.idQuiz;
 
 -- selecionando as tentativas feitas e apresentando apenas 1
-select distinct q.tentativas as tentativa
-	from partida as p join cadastro as c
-		on p.fkUsuario = c.idCadastro 
-	join quiz as q 
-		on p.fkQuiz = q.idQuiz
-	where p.fkUsuario = 3;
+select q.tentativas as tentativa,
+       q.idQuiz as idQuiz,
+       truncate(avg(p.pontuacao), 0) as pontuacao,
+       truncate(avg(p.tempo), 0) as tempoMedia
+from partida as p
+join cadastro as c on p.fkUsuario = c.idCadastro
+join quiz as q on p.fkQuiz = q.idQuiz
+where p.fkUsuario = 3
+group by q.idQuiz, q.tentativas;
 
 -- selecionando a média de pontuação por usuário
 select truncate(avg(p.pontuacao),0) as pontuacao

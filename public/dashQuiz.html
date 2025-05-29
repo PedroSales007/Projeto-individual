@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Forza Horizon 1</title>
+
+  <link rel="stylesheet" href="styles/dashQuiz.css">
+  <!-- Tailwind CSS para estilização rápida e responsiva -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <button onclick="home()" class="voltarHome"><img src="imagens/body/home.png" alt="" width="40px"></button>
+
+  <main>
+    <!-- Título Principal -->
+
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold">Resumo Quiz</h1>
+    </header>
+    <!-- KPIs - Indicadores Chave -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="kpi-box">
+        <h2 class="text-xl">Total de Tentativas</h2>
+        <p id="totalTentativas" class="text-3xl font-bold mt-2">0</p>
+      </div>
+      <div class="kpi-box">
+        <h2 class="text-xl">Pontuação Média</h2>
+        <p id="pontuacaoMedia" class="text-3xl font-bold mt-2">0</p>
+      </div>
+      <div class="kpi-box">
+        <h2 class="text-xl">Tempo Médio (s)</h2>
+        <p id="tempoMedio" class="text-3xl font-bold mt-2">0</p>
+      </div>
+    </section>
+    <!-- Gráficos -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Gráfico de Barras -->
+      <div class="chart-container">
+        <h3 class="text-lg mb-4">Pontuação dos ultimos 5 Quiz</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+      <!-- Gráfico de Linhas -->
+      <div class="chart-container">
+        <h3 class="text-lg mb-4">Evolução de Tentativas</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script separado para lógica -->
+  <script src="javaScript/dashQuiz.js"></script>
+</body>
+
+</html>

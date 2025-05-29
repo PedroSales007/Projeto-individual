@@ -190,12 +190,16 @@ function showResult() {
             Você acertou ${score} de ${shuffledQuizData.length} perguntas!<br>
             Tempo total gasto para responder: ${totalTimeTaken}s<br><br>
             <button onclick="startQuiz()">Jogar novamente</button>
+            <button onclick="dashQuiz()">Dados quiz</button>
         `;
     adicionarPartida(score, totalTimeTaken);
 }
 
 startQuiz();
 
+function dashQuiz() {
+    window.location = 'dashQuiz.html'
+}
 
 
 function adicionarPartida(score, totalTimeTaken) {
