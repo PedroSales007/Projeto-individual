@@ -11,19 +11,7 @@ function adicionarPartida(req, res) {
 
     // Primeiro insere a partida
     partidaModel.adicionarPartida(id, idQuiz, tempo, pontuacao)
-        .then(function(resultado) {
-            // Depois incrementa a tentativa para esse quiz
-            return partidaModel.incrementarTentativa(idQuiz);
-        })
-        .then(function(resultado) {
-            // Se tudo deu certo, responde que deu certo
-            res.json({ message: "Partida adicionada e tentativa incrementada com sucesso" });
-        })
-        .catch(function(erro) {
-            console.log(erro);
-            // Se deu erro, manda erro para o cliente
-            res.status(500).json({ error: erro.sqlMessage || erro });
-        });
+        
 }
 
 // Exporta as funções para uso nas rotas

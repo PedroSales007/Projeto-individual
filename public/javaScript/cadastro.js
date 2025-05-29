@@ -12,7 +12,7 @@ function cadastrar(event) {
 
     if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmarSenha == "") {
         div_mensagem.innerHTML = `<p>Preencha os campos corretamente</p>`
-        return
+        return  
     }
 
     if (senhaVar != confirmarSenha) {

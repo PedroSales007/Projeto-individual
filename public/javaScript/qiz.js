@@ -200,7 +200,7 @@ startQuiz();
 
 function adicionarPartida(score, totalTimeTaken) {
    var idVar = sessionStorage.ID_USUARIO;
-   var idQuizVar = 1;
+   var idQuizVar = sessionStorage.ID_USUARIO;
     var tempoVar = totalTimeTaken;
     var pontuacaoVar = score;
 

@@ -10,7 +10,7 @@ main{
     height: 80vh;
     object-fit: cover;
     position: sticky;
-    top: 50px;
+    top:0;
 }
 .apresentacao {
     width: 100%;
@@ -104,12 +104,12 @@ main{
 /*Main 2*/
 .mapa{
     width: 80%;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #202020;
-
 }
 
 .mapa h1{
@@ -121,8 +121,8 @@ main{
 .mapa picture{
     background-image: url(../imagens/body/mapa.jpg);
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 /*Main 3*/
@@ -193,6 +193,7 @@ main{
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+    margin-top: 50px;
 }
 
 .servico .container .imagemCarro{

@@ -12,7 +12,7 @@ function login(event) {
  }
 
     if (emailVar == "" || senhaVar == "") {
-        div_mensagem.innerHTML = `<p>(Campos preenchidos de maneira incorreta)</p>`;
+        div_mensagem.innerHTML = `<p>Campo(s) não preenchido</p>`;
         return false;
     }
     else {

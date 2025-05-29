@@ -32,9 +32,10 @@ body {
 }
 
 
-.div_mensagem p {
+#div_mensagem  p{
   background-color: #e67e22;
   color: var(--preto);
+  font-weight: bold;
   font-size: 14px;
   margin-bottom: 10px;
   padding: 10px;
