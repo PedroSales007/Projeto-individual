@@ -19,6 +19,8 @@ var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
 var partidaRouter = require("./src/routes/partida");
 var kpiRouter = require("./src/routes/kpi");
+var pontuacaoRouter = require("./src/routes/pontuacao");
+var tempoRouter = require("./src/routes/tempo");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -30,6 +32,8 @@ app.use("/", indexRouter);
 app.use("/usuarios", usuarioRouter);
 app.use("/partida", partidaRouter);
 app.use("/kpi", kpiRouter);
+app.use("/pontuacao", pontuacaoRouter);
+app.use("/tempo", tempoRouter);
 
 app.listen(PORTA_APP, function () {
     console.log(`

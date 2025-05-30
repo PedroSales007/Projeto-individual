@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body>
+<body onload="pucharKPI(); graficoPontuacao(); graficoTempo();">
     <button onclick="home()" class="voltarHome"><img src="imagens/body/home.png" alt="" width="40px"></button>
 
   <main>
@@ -41,12 +41,12 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Gráfico de Barras -->
       <div class="chart-container">
-        <h3 class="text-lg mb-4">Pontuação dos ultimos 5 Quiz</h3>
+        <h3 class="text-lg mb-4">Evolução de pontuação nas ultimas 5 tentativas</h3>
         <canvas id="barChart"></canvas>
       </div>
       <!-- Gráfico de Linhas -->
       <div class="chart-container">
-        <h3 class="text-lg mb-4">Evolução de Tentativas</h3>
+        <h3 class="text-lg mb-4">Evolução em tempo de quiz nas ultimas 5 tentativas</h3>
         <canvas id="lineChart"></canvas>
       </div>
     </section>

@@ -1,14 +1,13 @@
 // Importa o model que tem as funções que fazem a lógica com o banco
-var kpiModel = require('../models/kpiModel');
+var pontuacaoModel = require('../models/graficoPontuacaoModel');
 
-
-function pucharKPI(req, res) {
+function graficoPontuacao(req, res) {
     var idUsuario = req.params.idUsuario
 
     if (idUsuario == undefined) {
         console.log('Id do usuario não encontrado')
     } else {
-        kpiModel.pucharKPI(idUsuario)
+        pontuacaoModel.graficoPontuacao(idUsuario)
         .then(
             function (resultado){
                 res.json(resultado);
@@ -17,7 +16,7 @@ function pucharKPI(req, res) {
             function (erro){
                 console.log(erro);
                 console.log(
-                        "\nHouve erro ao buscar dados das KPIs! ",
+                        "\nHouve erro ao buscar dados do Grafico de Pontuação! ",
                         erro.sqlMessage
                     );
                     res.status(500).json(erro.sqlMessage);
@@ -27,9 +26,7 @@ function pucharKPI(req, res) {
     }
 }
 
-
-
 // Exporta as funções para uso nas rotas
 module.exports = {
-    pucharKPI
+    graficoPontuacao
 };

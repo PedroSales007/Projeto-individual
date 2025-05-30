@@ -10,7 +10,7 @@ function adicionarPartida(id, idQuiz, tempo, pontuacao) {
             return database.executar(incrementarSql);
         } else {
             console.log(`Quiz com id ${idQuiz} não existe. Criando...`);
-            var criarSql = `INSERT INTO quiz(idQuiz, tentativas) VALUES (${idQuiz}, 1);`;
+            var criarSql = `INSERT INTO quiz(idQuiz, tentativas) VALUES (${idQuiz}, 0);`;
             return database.executar(criarSql);
         }
     }).then(() => {

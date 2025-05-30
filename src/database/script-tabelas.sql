@@ -36,7 +36,7 @@ select c.nome as usuario,
 	join quiz as q 
 		on p.fkQuiz = q.idQuiz;
 
--- selecionando as tentativas feitas e apresentando apenas 1
+-- selecionando as tentativas feitas e apresentando apenas 1 Para KPI
 select q.tentativas as tentativa,
        q.idQuiz as idQuiz,
        truncate(avg(p.pontuacao), 0) as pontuacao,
@@ -47,36 +47,26 @@ join quiz as q on p.fkQuiz = q.idQuiz
 where p.fkUsuario = 3
 group by q.idQuiz, q.tentativas;
 
--- selecionando a média de pontuação por usuário
-select truncate(avg(p.pontuacao),0) as pontuacao
-	from partida as p join cadastro as c
-		on p.fkUsuario = c.idCadastro 
-	join quiz as q 
-		on p.fkQuiz = q.idQuiz
-	where p.fkUsuario = 3;
+
     
--- selecionando os ultimos 5 registros de pontuação
+-- selecionando os ultimos 5 registros de pontuação Gráfico
 select truncate(p.pontuacao,0) as pontuacao
 	from partida as p join cadastro as c
 		on p.fkUsuario = c.idCadastro 
 	join quiz as q 
 		on p.fkQuiz = q.idQuiz
 	where p.fkUsuario = 3
+    order by p.pontuacao 
     limit 5;
 
--- selecionando a media de tempo de partida de cada usuário
-select truncate(avg(p.tempo),1) as tempo
-	from partida as p join cadastro as c
-		on p.fkUsuario = c.idCadastro 
-	join quiz as q 
-		on p.fkQuiz = q.idQuiz
-	where p.fkUsuario = 3;
 
--- selecionado os ultimos 5 registros de tempo em cada partida
+
+-- selecionado os ultimos 5 registros de tempo em cada partida Gráfico
 select truncate(p.tempo,1) as tempo
 	from partida as p join cadastro as c
 		on p.fkUsuario = c.idCadastro 
 	join quiz as q 
 		on p.fkQuiz = q.idQuiz
 	where p.fkUsuario = 3
+    order by p.tempo
     limit 5;
