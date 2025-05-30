@@ -51,8 +51,12 @@ function graficoPontuacao() {
     })
     .then(function (dadosG1) {
       // Criando o gráfico de barras com Chart.js
-      const mediaPorQuiz = [dadosG1[0].pontuacao, dadosG1[1].pontuacao, dadosG1[2].pontuacao, dadosG1[3].pontuacao, dadosG1[4].pontuacao];
+      var mediaPorQuiz = [];
 
+      for(var i = 0; i < 5; i++){
+        mediaPorQuiz.push(dadosG1[dadosG1.length - 1 - i].pontuacao)
+      } 
+      console.log(mediaPorQuiz)
       new Chart(document.getElementById('barChart'), {
         type: 'bar',
         data: {
@@ -99,7 +103,10 @@ function graficoTempo() {
       }
     })
     .then(function (dadosG2) {
-      const tentativasPorData = [dadosG2[0].tempo, dadosG2[1].tempo, dadosG2[2].tempo, dadosG2[3].tempo, dadosG2[4].tempo];
+      var tentativasPorData = [];
+      for(var i = 0; i < 5; i++){
+        tentativasPorData.push(dadosG2[dadosG2.length - 1 - i].tempo)
+      } 
 
       new Chart(document.getElementById('lineChart'), {
         type: 'line',
@@ -117,6 +124,11 @@ function graficoTempo() {
           responsive: true,
           scales: {
             y: { beginAtZero: true }
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
           }
         }
       });

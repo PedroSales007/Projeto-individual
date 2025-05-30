@@ -94,7 +94,7 @@ function loadQuestion() {
     clearInterval(timerInterval);
 
     // Se a resposta anterior foi em menos de 5s, o bônus já foi dado na função nextQuestion
-    // timeLeft pode estar > 30 se ganhou bônus (máx 35s, vamos limitar)
+    // timeLeft pode estar > 10s ganhou bônus (máx 15s, vamos limitar)
     if (timeLeft > 15) timeLeft = 15;
     if (timeLeft < 0) timeLeft = 0;
 

@@ -9,9 +9,7 @@ function  graficoTempo(idUsuario) {
 		                    on p.fkUsuario = c.idCadastro 
 	                    join quiz as q 
 		                    on p.fkQuiz = q.idQuiz
-	                    where p.fkUsuario = ${idUsuario}
-                        order by p.tempo
-                        limit 5;
+	                    where p.fkUsuario = ${idUsuario};
                  `;
         console.log('Executando a instrução SQL: \n' + instrucaoSql);
         return database.executar(instrucaoSql);

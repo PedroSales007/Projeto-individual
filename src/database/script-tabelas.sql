@@ -33,7 +33,7 @@ select c.nome as usuario,
        q.tentativas as tentativa
 	from partida as p join cadastro as c
 		on p.fkUsuario = c.idCadastro 
-	join quiz as q 
+	join quiz as q
 		on p.fkQuiz = q.idQuiz;
 
 -- selecionando as tentativas feitas e apresentando apenas 1 Para KPI
@@ -44,7 +44,7 @@ select q.tentativas as tentativa,
 from partida as p
 join cadastro as c on p.fkUsuario = c.idCadastro
 join quiz as q on p.fkQuiz = q.idQuiz
-where p.fkUsuario = 3
+where p.fkUsuario = 6
 group by q.idQuiz, q.tentativas;
 
 
@@ -55,9 +55,7 @@ select truncate(p.pontuacao,0) as pontuacao
 		on p.fkUsuario = c.idCadastro 
 	join quiz as q 
 		on p.fkQuiz = q.idQuiz
-	where p.fkUsuario = 3
-    order by p.pontuacao 
-    limit 5;
+	where p.fkUsuario = 6;
 
 
 
@@ -67,6 +65,4 @@ select truncate(p.tempo,1) as tempo
 		on p.fkUsuario = c.idCadastro 
 	join quiz as q 
 		on p.fkQuiz = q.idQuiz
-	where p.fkUsuario = 3
-    order by p.tempo
-    limit 5;
+	where p.fkUsuario = 6;
