@@ -4,9 +4,9 @@ var mysql = require("mysql2");
 var mySqlConfig = {
     host: "127.0.0.1", //inserir host
     database: "horizonTuner", //inserir banco
-    user: "root", // inserir usuario 
-    password: "PadrinHss%201615", // inserir senha 
-    port: 3306
+    user: "aluno", // inserir usuario 
+    password: "Sptech#2024", // inserir senha 
+    port: 3307
 };
 
 function executar(instrucao) {

@@ -53,7 +53,7 @@ function graficoPontuacao() {
       // Criando o gráfico de barras com Chart.js
       var mediaPorQuiz = [];
 
-      for(var i = 0; i < 5; i++){
+      for(var i = 0; i < dadosG1.length; i++){
         mediaPorQuiz.push(dadosG1[dadosG1.length - 1 - i].pontuacao)
       } 
       console.log(mediaPorQuiz)
@@ -104,7 +104,7 @@ function graficoTempo() {
     })
     .then(function (dadosG2) {
       var tentativasPorData = [];
-      for(var i = 0; i < 5; i++){
+      for(var i = 0; i < dadosG2.length; i++){
         tentativasPorData.push(dadosG2[dadosG2.length - 1 - i].tempo)
       } 
 
