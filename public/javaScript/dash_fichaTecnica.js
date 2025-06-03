@@ -29,7 +29,7 @@ function sair() {
                 labels: ['1ª', '2ª', '3ª', '4ª', '5ª'],
                 datasets: [{
                     label: 'Velocidade por marcha',
-                    backgroundColor: '#00e6e6',
+                    backgroundColor: '#4d3a55e0',
                     data: [`${fichaSelecionada.velocidade_por_marcha.m1}`, `${fichaSelecionada.velocidade_por_marcha.m2}`, `${fichaSelecionada.velocidade_por_marcha.m3}`, `${fichaSelecionada.velocidade_por_marcha.m4}`, `${fichaSelecionada.velocidade_por_marcha.m5}`]
                 }]
             },
@@ -64,7 +64,7 @@ function sair() {
                 labels: ['Temperatura Máxima'],
                 datasets: [{
                     data: [`${fichaSelecionada.temperatura_maxima_motor}` , 10], // 93ºC de 140ºC
-                    backgroundColor: ['#e74c3c', '#333'],
+                    backgroundColor: ['#FEFB4C', '#333'],
                     borderWidth: 0
                 }]
             },
@@ -87,9 +87,9 @@ function sair() {
                 labels: ['Velocidade', 'Controle', 'Aceleração', 'Arrancada', 'Frenagem'],
                 datasets: [{
                     label: 'Desempenho Geral',
-                    backgroundColor: 'rgba(46, 204, 113, 0.2)',
-                    borderColor: '#2ecc71',
-                    pointBackgroundColor: '#2ecc71',
+                    backgroundColor: 'rgba(164, 190, 175, 0.2)',
+                    borderColor: '#fcfcfc',
+                    pointBackgroundColor: '#fcfcfc',
                     data: [`${fichaSelecionada.stats.velocidade}`, `${fichaSelecionada.stats.controle}`, `${fichaSelecionada.stats.aceleracao}`, `${fichaSelecionada.stats.arrancada}`, `${fichaSelecionada.stats.frenagem}`] 
                 }]
             },

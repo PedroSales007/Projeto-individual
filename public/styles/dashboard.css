@@ -29,7 +29,7 @@
         .card {
           background-color: #1f1f1f;
           padding: 0.6rem;
-          border-left: 4px solid #3498db;
+          border-left: 4px solid #e67e22;
           border-radius: 8px;
           display: flex;
           flex-direction: column;
@@ -38,7 +38,7 @@
 
         .home-btn {
           background-color: #333;
-          border-left: 4px solid #34dbdb;
+          border-left: 4px solid #e67e22;
 
           text-align: center;
           cursor: pointer;
@@ -51,7 +51,7 @@
         .card h2 {
           font-size: 1.1rem;
           margin-bottom: 0.2rem;
-          color: #00e6e6;
+          color: #e67e22;
         }
 
         .card p {
