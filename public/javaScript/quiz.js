@@ -83,7 +83,7 @@ function startQuiz() {
     userAnswers = Array(shuffledQuizData.length).fill(null);
     score = 0;
     totalTimeTaken = 0;
-    timeLeft = 10; // reset timer
+    timeLeft = 15; // reset timer
 
     resultEl.style.display = 'none';
     document.getElementById('quiz').style.display = 'block';
@@ -95,7 +95,7 @@ function loadQuestion() {
 
     // Se a resposta anterior foi em menos de 5s, o bônus já foi dado na função nextQuestion
     // timeLeft pode estar > 10s ganhou bônus (máx 15s, vamos limitar)
-    if (timeLeft > 15) timeLeft = 15;
+    if (timeLeft > 20) timeLeft = 20;
     if (timeLeft < 0) timeLeft = 0;
 
     updateTimerDisplay();

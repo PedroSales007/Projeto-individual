@@ -1,9 +1,6 @@
 function sair() {
         window.location = 'favoritos.html'
     }
-
-
-    
         const fichaSelecionada = JSON.parse(sessionStorage.getItem("ficha"));
 
         if (fichaSelecionada) {

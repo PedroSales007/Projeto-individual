@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/logado.css">
-
+    <link rel="shortcut icon" href="imagens/body/logo-forza.png" type="image/x-icon">
     <title>Horizon Garage</title>
 </head>
 
 <body>
     <nav style="justify-content: space-between; padding: 0 50px;">
         <picture>
-            <a href="aposlogin.html">Horizon Tuner</a>
+            <a href="aposlogin.html">Horizon Garage</a>
         </picture>
 
         <ul style="width: 45%;">
@@ -119,9 +119,9 @@
                 </div>
             </section>
 
-            <section class="estacaoRadio" >
+            <section class="estacaoRadio">
                 <button onclick="historia()" class="btn_historia">Retornar para História</button>
-                <h1 style="text-align: center; margin-top: 10px;">Escolha  sua rádio favorita</h1>
+                <h1 style="text-align: center; margin-top: 10px;">Escolha sua rádio favorita</h1>
                 <div class="estacoes">
                     <div class="radio" id="radio1">
                         <picture class="r1">
@@ -183,16 +183,15 @@
 <script>
     window.onload = () => {
         usuarioNome.innerHTML = sessionStorage.NOME_USUARIO
+        const radio = document.querySelector('.estacaoRadio').style.display = 'none';
     }
-
-    
 
 
     function radio() {
         const historia = document.querySelector('.apenasHistoria');
-        const radio = document.querySelector('.estacaoRadio');
         const pai = document.querySelector('#container');
-        const body = document.querySelector('body')
+        const body = document.querySelector('body');
+        const radio = document.querySelector('.estacaoRadio');
 
         pai.classList.replace('historia', 'radioPai');
 
@@ -200,31 +199,31 @@
         historia.style.display = 'none';
     }
 
-        const r1 = document.querySelector('#radio1');
-        const r2 = document.querySelector('#radio2');
-        const r3 = document.querySelector('#radio3');
-        var radio1Ativo = false;
-        var radio2Ativo = false;
-        var radio3Ativo = false;
+    const r1 = document.querySelector('#radio1');
+    const r2 = document.querySelector('#radio2');
+    const r3 = document.querySelector('#radio3');
+    var radio1Ativo = false;
+    var radio2Ativo = false;
+    var radio3Ativo = false;
 
-        r1.addEventListener('click', () => {
-            radio1Ativo = true;
-            radio2Ativo = false;
-            radio3Ativo = false;
-            musicaRadio();
-        })
-        r2.addEventListener('click', () => {
-            radio2Ativo = true;
-            radio1Ativo = false;
-            radio3Ativo = false;
-            musicaRadio();
-        })
-        r3.addEventListener('click', () => {
-            radio1Ativo = false;
-            radio2Ativo = false;
-            radio3Ativo = true;
-            musicaRadio();
-        })
+    r1.addEventListener('click', () => {
+        radio1Ativo = true;
+        radio2Ativo = false;
+        radio3Ativo = false;
+        musicaRadio();
+    })
+    r2.addEventListener('click', () => {
+        radio2Ativo = true;
+        radio1Ativo = false;
+        radio3Ativo = false;
+        musicaRadio();
+    })
+    r3.addEventListener('click', () => {
+        radio1Ativo = false;
+        radio2Ativo = false;
+        radio3Ativo = true;
+        musicaRadio();
+    })
 
     function musicaRadio() {
         let radioPlayer = ""

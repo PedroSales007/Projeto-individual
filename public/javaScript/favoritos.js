@@ -1418,7 +1418,7 @@ const ficha = [
         },
     },
     {
-        id: 56,
+        id: 55,
         modelo: "MP4-12C",
         velocidade_por_marcha: {
             m1: 70,

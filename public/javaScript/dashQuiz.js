@@ -1,3 +1,5 @@
+usuarioNome.innerHTML = sessionStorage.NOME_USUARIO;
+
 function home() {
   window.location = 'aposlogin.html'
 }
