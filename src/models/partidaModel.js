@@ -15,12 +15,11 @@ function adicionarPartida(id, tempo, pontuacao) {
             console.log(`Quiz com fkUsuario = ${id} não existe. Criando novo...`);
             var criarSql = `INSERT INTO quiz (fkUsuario, tentativas) VALUES (${id}, 1);`;
             return database.executar(criarSql).then(resultadoInsert => {
-                // Aqui obtemos o insertId do novo quiz criado
+                // Retorna o id que foi criado sendo que o insertId é um produto da lista que quando é gerado um insert
                 return resultadoInsert.insertId;
             });
         }
     }).then(idQuiz => {
-        // Agora com o idQuiz em mãos, inserimos a partida com os FKs corretos
         var instrucaoSql = `
             INSERT INTO partida (fkUsuario, fkQuiz, tempo, pontuacao)
             VALUES (${id}, ${idQuiz}, ${tempo}, ${pontuacao});

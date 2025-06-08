@@ -51,16 +51,16 @@ const quizData = [
     }
 ];
 
-let shuffledQuizData = [];
-let currentQuestion = 0;
-let userAnswers = [];
-let score = 0;
+let embaralhadas = [];
+let indiceAtual = 0;
+let respostasUsuario = [];
+let pontuacao = 0;
 
-let questionStartTime = 0;
-let totalTimeTaken = 0;
+let tempoCarregamentoPergunta = 0;
+let tempoTotal = 0;
 
-let timerInterval = null;
-let timeLeft = 30; // tempo inicial por questão
+let idIntervalo = null;
+let tempoRestante = 30; // tempo inicial por questão
 
 const questionEl = document.getElementById('question');
 const optionsEl = document.getElementById('options');
@@ -69,7 +69,7 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const timerEl = document.getElementById('timer');
 
-function shuffleArray(array) {
+function embaralharPerguntas(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -78,63 +78,63 @@ function shuffleArray(array) {
 }
 
 function startQuiz() {
-    shuffledQuizData = shuffleArray([...quizData]);
-    currentQuestion = 0;
-    userAnswers = Array(shuffledQuizData.length).fill(null);
-    score = 0;
-    totalTimeTaken = 0;
-    timeLeft = 15; // reset timer
+    embaralhadas = embaralharPerguntas([...quizData]);
+    indiceAtual = 0;
+    respostasUsuario = Array(embaralhadas.length).fill(null);
+    pontuacao = 0;
+    tempoTotal = 0;
+    tempoRestante = 30; 
 
     resultEl.style.display = 'none';
     document.getElementById('quiz').style.display = 'block';
-    loadQuestion();
+    carregandoQuestao();
 }
 
-function loadQuestion() {
-    clearInterval(timerInterval);
+function carregandoQuestao() {
+    clearInterval(idIntervalo);
 
     // Se a resposta anterior foi em menos de 5s, o bônus já foi dado na função nextQuestion
-    // timeLeft pode estar > 10s ganhou bônus (máx 15s, vamos limitar)
-    if (timeLeft > 20) timeLeft = 20;
-    if (timeLeft < 0) timeLeft = 0;
+    // tempoRestante pode estar > 10s ganhou bônus (máx 15s, vamos limitar)
+    if (tempoRestante > 30) tempoRestante = 30;
+    if (tempoRestante < 0) tempoRestante = 0;
 
-    updateTimerDisplay();
+    atualizarTempo();
 
-    timerInterval = setInterval(() => {
-        timeLeft--;
-        updateTimerDisplay();
+    idIntervalo = setInterval(() => {
+        tempoRestante--;
+        atualizarTempo();
 
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
+        if (tempoRestante <= 0) {
+            clearInterval(idIntervalo);
             alert('Tempo esgotado!');
             showResult();
         }
     }, 1000);
 
-    questionStartTime = Date.now();
+    tempoCarregamentoPergunta = Date.now(); //tempo da pergunta atual
 
-    const current = shuffledQuizData[currentQuestion];
+    const current = embaralhadas[indiceAtual];
     questionEl.textContent = current.question;
     optionsEl.innerHTML = '';
 
     current.options.forEach(opt => {
-        const checked = userAnswers[currentQuestion] === opt[0] ? 'checked' : '';
+        const checked = respostasUsuario[indiceAtual] === opt[0] ? 'checked' : '';
         optionsEl.innerHTML += `<input type="radio" id="${opt[0]}" name="option" value="${opt[0]}" ${checked}>
             <label for="${opt[0]}"> ${opt}</label>`;
     });
 
-    prevBtn.style.display = currentQuestion === 0 ? 'none' : 'inline-block';
-    nextBtn.textContent = currentQuestion === shuffledQuizData.length - 1 ? 'Finalizar' : 'Próximo';
+    prevBtn.style.display = indiceAtual === 0 ? 'none' : 'inline-block';
+    nextBtn.textContent = indiceAtual === embaralhadas.length - 1 ? 'Finalizar' : 'Próximo';
 }
 
-function updateTimerDisplay() {
-    timerEl.textContent = `Tempo: ${timeLeft}s`;
+function atualizarTempo() {
+    timerEl.textContent = `Tempo: ${tempoRestante}s`;
 }
 
 function saveAnswer() {
     const selected = document.querySelector('input[name="option"]:checked');
     if (selected) {
-        userAnswers[currentQuestion] = selected.value;
+        respostasUsuario[indiceAtual] = selected.value;
     }
 }
 
@@ -147,52 +147,52 @@ function nextQuestion() {
         return;
     }
 
-    clearInterval(timerInterval);
+    clearInterval(idIntervalo);
 
-    const responseTime = Math.floor((Date.now() - questionStartTime) / 1000);
-    totalTimeTaken += responseTime;
+    const responseTime = Math.floor((Date.now() - tempoCarregamentoPergunta) / 1000);
+    tempoTotal += responseTime;
 
     // Se respondeu em menos de 5 segundos, ganha +5 segundos para o próximo tempo
     if (responseTime < 5) {
-        timeLeft += 5; // adiciona o bônus para próxima questão
+        tempoRestante += 5; // adiciona o bônus para próxima questão
     }
     // Se respondeu depois de 5s, mantém o tempoLeft que sobrou (sem alteração)
 
-    if (userAnswers[currentQuestion] === shuffledQuizData[currentQuestion].answer) {
-        score++;
+    if (respostasUsuario[indiceAtual] === embaralhadas[indiceAtual].answer) {
+        pontuacao++;
     }
 
-    if (currentQuestion < shuffledQuizData.length - 1) {
-        currentQuestion++;
-        loadQuestion();
+    if (indiceAtual < embaralhadas.length - 1) {
+        indiceAtual++;
+        carregandoQuestao();
     } else {
         showResult();
     }
 }
 
 function prevQuestion() {
-    clearInterval(timerInterval);
+    clearInterval(idIntervalo);
 
     saveAnswer();
 
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion();
+    if (indiceAtual > 0) {
+        indiceAtual--;
+        carregandoQuestao();
     }
 }
 
 function showResult() {
-    clearInterval(timerInterval);
+    clearInterval(idIntervalo);
     document.getElementById('quiz').style.display = 'none';
     resultEl.style.display = 'block';
 
     resultEl.innerHTML = `
-            Você acertou ${score} de ${shuffledQuizData.length} perguntas!<br>
-            Tempo total gasto para responder: ${totalTimeTaken}s<br><br>
+            Você acertou ${pontuacao} de ${embaralhadas.length} perguntas!<br>
+            Tempo total gasto para responder: ${tempoTotal}s<br><br>
             <button onclick="startQuiz()">Jogar novamente</button>
             <button onclick="dashQuiz()">Dados quiz</button>
         `;
-    adicionarPartida(score, totalTimeTaken);
+    adicionarPartida(pontuacao, tempoTotal);
 }
 
 startQuiz();
@@ -202,10 +202,10 @@ function dashQuiz() {
 }
 
 
-function adicionarPartida(score, totalTimeTaken) {
+function adicionarPartida(pontuacao, tempoTotal) {
    var idVar = sessionStorage.ID_USUARIO;
-    var tempoVar = totalTimeTaken;
-    var pontuacaoVar = score;
+    var tempoVar = tempoTotal;
+    var pontuacaoVar = pontuacao;
 
     fetch("/partida/adicionarPartida", {
         method: "POST",

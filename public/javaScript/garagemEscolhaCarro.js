@@ -1267,9 +1267,17 @@ nivelPorcentagemFrenagem.style.width = "142.5px"
 
 function favoritarCarroAtual() {
     if (carroAtual) {
+        console.log(carroAtual.id)
         let favorito = JSON.parse(sessionStorage.getItem('favorito')) || [];
 
-        let existe = favorito.some(rep => rep.id === carroAtual.id);
+        let existe = false;
+        for(let i = 0;i < favorito.length; i++){
+            if(favorito[i].id === carroAtual.id){
+                existe = true;
+                break;
+            }
+        }
+
         if (!existe) {
             favorito.push(carroAtual);
             sessionStorage.setItem("favorito", JSON.stringify(favorito));
