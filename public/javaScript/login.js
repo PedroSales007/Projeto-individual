@@ -42,7 +42,7 @@ function login(event) {
                 console.log(JSON.stringify(json));
                 sessionStorage.EMAIL_USUARIO = json.email;
                 sessionStorage.NOME_USUARIO = json.nome;
-                sessionStorage.ID_USUARIO = json.idCadastro;
+                sessionStorage.ID_USUARIO = json.idUsuario;
 
                 setTimeout(function () {
                     window.location = "aposLogin.html";

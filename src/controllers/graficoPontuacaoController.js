@@ -2,12 +2,12 @@
 var pontuacaoModel = require('../models/graficoPontuacaoModel');
 
 function graficoPontuacao(req, res) {
-    var idUsuario = req.params.idUsuario
+    var ID_USUARIO = req.params.idUsuario
 
-    if (idUsuario == undefined) {
+    if (ID_USUARIO == undefined) {
         console.log('Id do usuario não encontrado')
     } else {
-        pontuacaoModel.graficoPontuacao(idUsuario)
+        pontuacaoModel.graficoPontuacao(ID_USUARIO)
         .then(
             function (resultado){
                 res.json(resultado);

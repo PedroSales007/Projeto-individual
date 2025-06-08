@@ -204,7 +204,6 @@ function dashQuiz() {
 
 function adicionarPartida(score, totalTimeTaken) {
    var idVar = sessionStorage.ID_USUARIO;
-   var idQuizVar = sessionStorage.ID_USUARIO;
     var tempoVar = totalTimeTaken;
     var pontuacaoVar = score;
 
@@ -215,7 +214,6 @@ function adicionarPartida(score, totalTimeTaken) {
         },
         body: JSON.stringify({
             idServer: idVar,
-            idQuizServer: idQuizVar,
             tempoServer: tempoVar,
             pontuacaoServer: pontuacaoVar,
         }),

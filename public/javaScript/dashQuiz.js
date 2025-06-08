@@ -4,10 +4,10 @@ function home() {
   window.location = 'aposlogin.html'
 }
 
-let idUsuario = sessionStorage.getItem('ID_USUARIO');
+let ID_USUARIO = sessionStorage.getItem('ID_USUARIO');
 
 function pucharKPI() {
-  fetch(`/kpi/pucharKPI/${idUsuario}`, {
+  fetch(`/kpi/pucharKPI/${ID_USUARIO}`, {
     method: 'GET',
     headers: {
       "Content-type": "application/json"
@@ -17,7 +17,7 @@ function pucharKPI() {
       console.log(dadosKPI);
 
       if (dadosKPI.ok) {
-        console.log(`Captura dos dados da KPI ${idUsuario}`, dadosKPI)
+        console.log(`Captura dos dados da KPI ${ID_USUARIO}`, dadosKPI)
         return dadosKPI.json();
       } else {
         throw 'Erro ao buscar os dados no Banco de Dados';
@@ -35,7 +35,7 @@ function pucharKPI() {
 }
 
 function graficoPontuacao() {
-  fetch(`/pontuacao/graficoPontuacao/${idUsuario}`, {
+  fetch(`/pontuacao/graficoPontuacao/${ID_USUARIO}`, {
     method: 'GET',
     headers: {
       "Content-type": "application/json"
@@ -45,7 +45,7 @@ function graficoPontuacao() {
       console.log(dadosG1);
 
       if (dadosG1.ok) {
-        console.log(`Captura dos dados do gráfico de pontuacao ${idUsuario}`, dadosG1)
+        console.log(`Captura dos dados do gráfico de pontuacao ${ID_USUARIO}`, dadosG1)
         return dadosG1.json();
       } else {
         throw 'Erro ao buscar os dados no gráfico de pontuacao no Banco de Dados';
@@ -88,7 +88,7 @@ function graficoPontuacao() {
 }
 
 function graficoTempo() {
-  fetch(`/tempo/graficoTempo/${idUsuario}`, {
+  fetch(`/tempo/graficoTempo/${ID_USUARIO}`, {
     method: 'GET',
     headers: {
       "Content-type": "application/json"
@@ -98,7 +98,7 @@ function graficoTempo() {
       console.log(dadosG2);
 
       if (dadosG2.ok) {
-        console.log(`Captura dos dados do gráfico de Tempo${idUsuario}`, dadosG2)
+        console.log(`Captura dos dados do gráfico de Tempo${ID_USUARIO}`, dadosG2)
         return dadosG2.json();
       } else {
         throw 'Erro ao adicionar os dados do gráfico de tempo no Banco de Dados';

@@ -1,14 +1,13 @@
 // Importa o model que tem as funções que fazem a lógica com o banco
 var kpiModel = require('../models/kpiModel');
 
-
 function pucharKPI(req, res) {
-    var idUsuario = req.params.idUsuario
+    var ID_USUARIO = req.params.ID_USUARIO;
 
-    if (idUsuario == undefined) {
-        console.log('Id do usuario não encontrado')
+    if (ID_USUARIO == undefined) {
+        console.log('Id do usuário não encontrado')
     } else {
-        kpiModel.pucharKPI(idUsuario)
+        kpiModel.pucharKPI(ID_USUARIO)
         .then(
             function (resultado){
                 res.json(resultado);

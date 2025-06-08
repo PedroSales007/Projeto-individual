@@ -3,7 +3,7 @@ var mysql = require("mysql2");
 // CONEXÃO DO BANCO MYSQL SERVER
 var mySqlConfig = {
     host: "127.0.0.1", //inserir host
-    database: "horizonTuner", //inserir banco
+    database: "horizonGarage", //inserir banco
     user: "aluno", // inserir usuario 
     password: "Sptech#2024", // inserir senha 
     port: 3307

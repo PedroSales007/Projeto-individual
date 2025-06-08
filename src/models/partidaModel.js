@@ -1,19 +1,26 @@
 var database = require('../database/config');
 
-function adicionarPartida(id, idQuiz, tempo, pontuacao) {
-    var verificarSql = `SELECT * FROM quiz WHERE idQuiz = ${idQuiz};`;
+function adicionarPartida(id, tempo, pontuacao) {
+    var verificarSql = `SELECT * FROM quiz WHERE fkUsuario = ${id};`;
 
     return database.executar(verificarSql).then(resultado => {
         if (resultado.length > 0) {
-            console.log(`Quiz com id ${idQuiz} já existe. Incrementando tentativas.`);
-            var incrementarSql = `UPDATE quiz SET tentativas = tentativas + 1 WHERE idQuiz = ${idQuiz};`;
-            return database.executar(incrementarSql);
+            console.log(`Quiz com fkUsuario = ${id} já existe. Incrementando tentativas.`);
+            var incrementarSql = `UPDATE quiz SET tentativas = tentativas + 1 WHERE fkUsuario = ${id};`;
+            return database.executar(incrementarSql).then(() => {
+                // Retorna o ID do quiz existente
+                return resultado[0].idQuiz;
+            });
         } else {
-            console.log(`Quiz com id ${idQuiz} não existe. Criando...`);
-            var criarSql = `INSERT INTO quiz(idQuiz, tentativas) VALUES (${idQuiz}, 1);`;
-            return database.executar(criarSql);
+            console.log(`Quiz com fkUsuario = ${id} não existe. Criando novo...`);
+            var criarSql = `INSERT INTO quiz (fkUsuario, tentativas) VALUES (${id}, 1);`;
+            return database.executar(criarSql).then(resultadoInsert => {
+                // Aqui obtemos o insertId do novo quiz criado
+                return resultadoInsert.insertId;
+            });
         }
-    }).then(() => {
+    }).then(idQuiz => {
+        // Agora com o idQuiz em mãos, inserimos a partida com os FKs corretos
         var instrucaoSql = `
             INSERT INTO partida (fkUsuario, fkQuiz, tempo, pontuacao)
             VALUES (${id}, ${idQuiz}, ${tempo}, ${pontuacao});
